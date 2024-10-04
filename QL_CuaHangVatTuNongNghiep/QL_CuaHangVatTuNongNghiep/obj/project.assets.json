@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
+      "projectUniqueName": "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
       "projectName": "QL_CuaHangVatTuNongNghiep",
-      "projectPath": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
+      "projectPath": "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
       "packagesPath": "C:\\Users\\THINH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\obj\\",
+      "outputPath": "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

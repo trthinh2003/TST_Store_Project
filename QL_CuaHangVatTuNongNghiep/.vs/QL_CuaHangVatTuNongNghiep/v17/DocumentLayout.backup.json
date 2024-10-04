@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|c:\\users\\thinh\\source\\repos\\ql_cuahangvattunongnghiep\\ql_cuahangvattunongnghiep\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|c:\\users\\thinh\\source\\repos\\ql_cuahangvattunongnghiep\\ql_cuahangvattunongnghiep\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|c:\\users\\thinh\\source\\repos\\ql_cuahangvattunongnghiep\\ql_cuahangvattunongnghiep\\formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|c:\\users\\thinh\\source\\repos\\ql_cuahangvattunongnghiep\\ql_cuahangvattunongnghiep\\formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|c:\\users\\thinh\\source\\repos\\ql_cuahangvattunongnghiep\\ql_cuahangvattunongnghiep\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|c:\\users\\thinh\\source\\repos\\ql_cuahangvattunongnghiep\\ql_cuahangvattunongnghiep\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|c:\\users\\thinh\\source\\repos\\ql_cuahangvattunongnghiep\\ql_cuahangvattunongnghiep\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormHangHoa.cs",
+              "DocumentMoniker": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs",
+              "ToolTip": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAvwBUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T08:05:01.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Modify.cs",
+              "DocumentMoniker": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "ToolTip": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwDEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T07:54:08.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\TaiKhoan.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\TaiKhoan.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T07:54:01.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormTrangChu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
+              "ToolTip": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs [Design]",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T07:46:39.058Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\Program.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\Program.cs",
+              "ToolTip": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\Program.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T07:38:32.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormHangHoa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs",
+              "ToolTip": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs [Design]",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormHangHoa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T07:35:26.146Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormTrangChu.cs",
+              "DocumentMoniker": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
+              "ToolTip": "C:\\Users\\THINH\\source\\repos\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAIAwwCwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T07:26:53.323Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

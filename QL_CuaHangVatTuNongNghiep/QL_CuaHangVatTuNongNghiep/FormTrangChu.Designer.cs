@@ -337,9 +337,9 @@
             groupBox2.Controls.Add(pictureBox12);
             groupBox2.Controls.Add(pictureBox11);
             groupBox2.Font = new Font("Segoe UI", 12F);
-            groupBox2.Location = new Point(27, 492);
+            groupBox2.Location = new Point(27, 498);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1580, 533);
+            groupBox2.Size = new Size(1580, 435);
             groupBox2.TabIndex = 6;
             groupBox2.TabStop = false;
             // 

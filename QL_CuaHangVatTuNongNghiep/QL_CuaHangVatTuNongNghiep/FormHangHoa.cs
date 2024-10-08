@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
 using System.Collections;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
+using System.Text.RegularExpressions;
 
 namespace QL_CuaHangVatTuNongNghiep
 {
@@ -45,6 +47,7 @@ namespace QL_CuaHangVatTuNongNghiep
             dgvHangHoa.Columns["MaLoai"].HeaderText = "Mã loại";
             dgvHangHoa.Columns["MaLoai"].Width = 150;
             dgvHangHoa.Columns["TenLoai"].HeaderText = "Tên loại";
+            txtMaHangHoa.Enabled = true;
         }
 
         private void btnLoadAnh_Click(object sender, EventArgs e)
@@ -86,6 +89,7 @@ namespace QL_CuaHangVatTuNongNghiep
             {
                 if (e.RowIndex == -1) return;
                 DataGridViewRow row = dgvHangHoa.Rows[e.RowIndex];
+                txtMaHangHoa.Enabled = true;
                 txtMaHangHoa.Text = row.Cells[0].Value.ToString();
                 txtTenHangHoa.Text = row.Cells[1].Value.ToString();
                 cboDVT.Text = row.Cells[2].Value.ToString();
@@ -117,8 +121,14 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void btnThemHangHoa_Click(object sender, EventArgs e)
         {
+            btnDatLai_Click(sender, e);
+            modify.LayMaHangHoaMaxNapVaoTextBox("SELECT MAX(MaHang) + 1 FROM HangHoa", txtMaHangHoa);
+        }
+
+        private void btnLuuThongTin_Click(object sender, EventArgs e)
+        {
             string query = "INSERT INTO HangHoa(TenHang, GiaNiemYet, HinhAnh, MaLoai, DVT) " +
-                "VALUES (@tenhang, @gianiemyet, @hinhanh, @maloai, @dvt)";
+                           "VALUES (@tenhang, @gianiemyet, @hinhanh, @maloai, @dvt)";
             try
             {
                 layDuLieu();
@@ -161,6 +171,7 @@ namespace QL_CuaHangVatTuNongNghiep
                     modify.CommandHangHoa(hangHoa, query);
                     MessageBox.Show("Xóa hàng hóa thành công!");
                     FormHangHoa_Load(sender, e);
+                    btnDatLai_Click(sender, e);
                 }
             }
             catch (Exception ex)
@@ -181,5 +192,7 @@ namespace QL_CuaHangVatTuNongNghiep
                 dgvHangHoa.DataSource = modify.DataTable(sqlSearch);
             }
         }
+
+
     }
 }

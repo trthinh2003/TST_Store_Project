@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHangHoa));
             dgvHangHoa = new DataGridView();
             label1 = new Label();
             txtTimKiem = new TextBox();
             groupBox1 = new GroupBox();
+            btnLuuThongTin = new Button();
             cboTenLoaiHangHoa = new ComboBox();
             cboDVT = new ComboBox();
             btnDatLai = new Button();
@@ -63,27 +64,27 @@
             dgvHangHoa.AllowUserToAddRows = false;
             dgvHangHoa.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvHangHoa.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.Teal;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 14F);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = Color.Teal;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvHangHoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = Color.Teal;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 14F);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.Teal;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvHangHoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvHangHoa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvHangHoa.EnableHeadersVisualStyles = false;
             dgvHangHoa.Location = new Point(86, 72);
             dgvHangHoa.Margin = new Padding(5);
             dgvHangHoa.Name = "dgvHangHoa";
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.Teal;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 14F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvHangHoa.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.Teal;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 14F);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvHangHoa.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgvHangHoa.RowHeadersVisible = false;
             dgvHangHoa.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dgvHangHoa.RowTemplate.Height = 32;
@@ -113,6 +114,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.Control;
+            groupBox1.Controls.Add(btnLuuThongTin);
             groupBox1.Controls.Add(cboTenLoaiHangHoa);
             groupBox1.Controls.Add(cboDVT);
             groupBox1.Controls.Add(btnDatLai);
@@ -136,13 +138,26 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin hàng hóa";
             // 
+            // btnLuuThongTin
+            // 
+            btnLuuThongTin.BackColor = Color.Teal;
+            btnLuuThongTin.Font = new Font("Segoe UI", 14F);
+            btnLuuThongTin.ForeColor = SystemColors.ButtonHighlight;
+            btnLuuThongTin.Location = new Point(319, 288);
+            btnLuuThongTin.Name = "btnLuuThongTin";
+            btnLuuThongTin.Size = new Size(176, 67);
+            btnLuuThongTin.TabIndex = 10;
+            btnLuuThongTin.Text = "Lưu thông tin";
+            btnLuuThongTin.UseVisualStyleBackColor = false;
+            btnLuuThongTin.Click += btnLuuThongTin_Click;
+            // 
             // cboTenLoaiHangHoa
             // 
             cboTenLoaiHangHoa.Font = new Font("Segoe UI", 13F);
             cboTenLoaiHangHoa.FormattingEnabled = true;
             cboTenLoaiHangHoa.Location = new Point(797, 130);
             cboTenLoaiHangHoa.Name = "cboTenLoaiHangHoa";
-            cboTenLoaiHangHoa.Size = new Size(216, 38);
+            cboTenLoaiHangHoa.Size = new Size(251, 38);
             cboTenLoaiHangHoa.TabIndex = 6;
             // 
             // cboDVT
@@ -163,7 +178,7 @@
             btnDatLai.ForeColor = SystemColors.ButtonHighlight;
             btnDatLai.Image = (Image)resources.GetObject("btnDatLai.Image");
             btnDatLai.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDatLai.Location = new Point(797, 288);
+            btnDatLai.Location = new Point(942, 288);
             btnDatLai.Name = "btnDatLai";
             btnDatLai.Size = new Size(144, 67);
             btnDatLai.TabIndex = 5;
@@ -178,7 +193,7 @@
             btnXoaHangHoa.Cursor = Cursors.Hand;
             btnXoaHangHoa.Font = new Font("Segoe UI", 14F);
             btnXoaHangHoa.ForeColor = SystemColors.ButtonHighlight;
-            btnXoaHangHoa.Location = new Point(579, 288);
+            btnXoaHangHoa.Location = new Point(725, 288);
             btnXoaHangHoa.Name = "btnXoaHangHoa";
             btnXoaHangHoa.Size = new Size(183, 67);
             btnXoaHangHoa.TabIndex = 5;
@@ -192,7 +207,7 @@
             btnSuaThongTin.Cursor = Cursors.Hand;
             btnSuaThongTin.Font = new Font("Segoe UI", 14F);
             btnSuaThongTin.ForeColor = SystemColors.ButtonHighlight;
-            btnSuaThongTin.Location = new Point(367, 288);
+            btnSuaThongTin.Location = new Point(525, 288);
             btnSuaThongTin.Name = "btnSuaThongTin";
             btnSuaThongTin.Size = new Size(178, 67);
             btnSuaThongTin.TabIndex = 5;
@@ -206,7 +221,7 @@
             btnThemHangHoa.Cursor = Cursors.Hand;
             btnThemHangHoa.Font = new Font("Segoe UI", 14F);
             btnThemHangHoa.ForeColor = SystemColors.ButtonHighlight;
-            btnThemHangHoa.Location = new Point(128, 288);
+            btnThemHangHoa.Location = new Point(81, 288);
             btnThemHangHoa.Name = "btnThemHangHoa";
             btnThemHangHoa.Size = new Size(206, 67);
             btnThemHangHoa.TabIndex = 5;
@@ -376,5 +391,6 @@
         private Button btnDatLai;
         private TextBox txtMaHangHoa;
         private GroupBox groupBox2;
+        private Button btnLuuThongTin;
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj": {}
+    "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj": {}
   },
   "projects": {
-    "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj": {
+    "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
+        "projectUniqueName": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
         "projectName": "QL_CuaHangVatTuNongNghiep",
-        "projectPath": "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
+        "projectPath": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj",
         "packagesPath": "C:\\Users\\THINH\\.nuget\\packages\\",
-        "outputPath": "E:\\KhoaHoc\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\obj\\",
+        "outputPath": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

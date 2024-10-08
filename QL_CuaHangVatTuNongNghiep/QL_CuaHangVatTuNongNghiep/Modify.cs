@@ -28,19 +28,26 @@ namespace QL_CuaHangVatTuNongNghiep
             return dt;
         }
 
-        public void CommandXacNhanTaiKhoan(TaiKhoan taiKhoan, string query, ref bool tonTaiTaiKhoan)
+
+        //Xử lý bên FormDangNhap
+        public void CommandXacNhanTaiKhoan(NhanVien nhanVien, string query, ref bool tonTaiTaiKhoan)
         {
             using (SqlConnection conn = Connection.GetSqlConnection())
             {
                 conn.Open();
                 command = new SqlCommand(query, conn);
-                command.Parameters.AddWithValue("@tentaikhoan", taiKhoan.TenTaiKhoan);
-                command.Parameters.AddWithValue("@matkhau", taiKhoan.MatKhau);
+                command.Parameters.AddWithValue("@tendangnhap", nhanVien.TenDangNhap);
+                command.Parameters.AddWithValue("@matkhau", nhanVien.MatKhau);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    taiKhoan.MaTaiKhoan = int.Parse(reader.GetInt32(0).ToString());
-                    taiKhoan.MaNV = int.Parse(reader.GetInt32(3).ToString());
+                    nhanVien.MaNV = int.Parse(reader[0].ToString());
+                    nhanVien.TenNV = reader[1].ToString();
+                    nhanVien.GioiTinh = reader[2].ToString();
+                    nhanVien.EmailNV = reader[3].ToString();
+                    nhanVien.DiaChiNV = reader[4].ToString();
+                    nhanVien.SdtNV = reader[5].ToString();
+                    nhanVien.ChucVu = reader[6].ToString();
                     tonTaiTaiKhoan = true;
                 }
                 else
@@ -51,6 +58,7 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
+        //Xử lý bên FormTrangChu
         public void CommandLayTenNV(ref string tenNV, ref string chucVu, string query)
         {
             using (SqlConnection conn = Connection.GetSqlConnection())
@@ -67,6 +75,8 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
+
+        //Xử lý bên FormHangHoa
         public void HienThiCombobox(string query, ComboBox cb, string hthi, string gtri)
         {
             using (SqlConnection conn = Connection.GetSqlConnection())
@@ -112,6 +122,23 @@ namespace QL_CuaHangVatTuNongNghiep
                 command.Parameters.AddWithValue("@maloai", hangHoa.MaLoai);
                 command.Parameters.AddWithValue("@dvt", hangHoa.Dvt);
                 command.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+
+        public void LayMaHangHoaMaxNapVaoTextBox(string query, TextBox tb)
+        {
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                command = new SqlCommand (query, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    tb.Text = reader.GetInt32(0).ToString();
+                }
+                reader.Close();
+                tb.Enabled = false;
                 conn.Close();
             }
         }

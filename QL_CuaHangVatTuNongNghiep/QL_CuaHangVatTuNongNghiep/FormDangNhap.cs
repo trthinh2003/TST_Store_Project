@@ -12,7 +12,7 @@ namespace QL_CuaHangVatTuNongNghiep
             InitializeComponent();
         }
         Modify modify = new Modify();
-        TaiKhoan taiKhoan;
+        NhanVien nhanVien;
         public int tempDN;
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
@@ -37,17 +37,19 @@ namespace QL_CuaHangVatTuNongNghiep
                 MessageBox.Show("Mật khẩu không được để trống!");
             else
             {
-                string query = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = @tentaikhoan AND MatKhau = @matkhau";
+                string query = "SELECT MaNV, TenNV, GioiTinh, EmailNV, DiaChiNV, SDTNV, ChucVu " +
+                    "FROM NhanVien WHERE TenDangNhap = @tendangnhap AND MatKhau = @matkhau";
                 try
                 {
                     bool existAccount = false;
                     layDuLieu();
-                    modify.CommandXacNhanTaiKhoan(taiKhoan, query, ref existAccount);
+                    modify.CommandXacNhanTaiKhoan(nhanVien, query, ref existAccount);
                     if (existAccount == true)
                     {
                         MessageBox.Show("Đăng nhập thành công!");
                         this.Hide();
-                        FormTrangChu frmTrangChu = new FormTrangChu(taiKhoan.MaNV);
+                        FormTrangChu frmTrangChu = new FormTrangChu(nhanVien.MaNV);
+                        frmTrangChu.FormClosed += (s, args) => this.Close();
                         frmTrangChu.ShowDialog();
                     }
                     else MessageBox.Show("Tài khoản không tồn tại!");
@@ -63,7 +65,11 @@ namespace QL_CuaHangVatTuNongNghiep
         {
             string tenDangNhap = txtTenDangNhap.Text;
             string matKhau = txtMatKhau.Text;
-            taiKhoan = new TaiKhoan(tenDangNhap, matKhau);
+            nhanVien = new NhanVien(tenDangNhap, matKhau);
+            //modify.LayThongTinNhanVien("SELECT MaNV, TenNV, GioiTinh, EmailNV, DiaChiNV, SDTNV, ChucVu " +
+            //                           "FROM NhanVien " +
+            //                           "WHERE TenDangNhap = @tendangnhap AND MatKhau = @matkhau;", nhanVien);
+
         }
 
         private void resetTenDangNhapVaMatKhau()

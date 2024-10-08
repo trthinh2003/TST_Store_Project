@@ -76,6 +76,7 @@ namespace QL_CuaHangVatTuNongNghiep
             btnNhanVien.ForeColor = Color.White;
             btnKhachHang.ForeColor = Color.White;
             btnTaiKhoan.ForeColor = Color.White;
+            btnQLNhapHang.ForeColor = Color.White;
         }
 
         private void ptbLogoStore_Click(object sender, EventArgs e)
@@ -145,6 +146,14 @@ namespace QL_CuaHangVatTuNongNghiep
         private void lblWelcome_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnQLNhapHang_Click(object sender, EventArgs e)
+        {
+            moFormCon(new FormNhapHang());
+            resetMauCacButton();
+            btnQLNhapHang.ForeColor = Color.OliveDrab;
+            lblFormName.Text = "Thông tin nhập hàng";
         }
     }
 }

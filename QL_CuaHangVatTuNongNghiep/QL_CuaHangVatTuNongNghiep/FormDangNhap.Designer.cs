@@ -103,6 +103,7 @@
             // btnDangNhap
             // 
             btnDangNhap.BackColor = SystemColors.ButtonFace;
+            btnDangNhap.Cursor = Cursors.Hand;
             btnDangNhap.Image = (Image)resources.GetObject("btnDangNhap.Image");
             btnDangNhap.ImageAlign = ContentAlignment.MiddleLeft;
             btnDangNhap.Location = new Point(61, 490);
@@ -117,6 +118,7 @@
             // btnThoat
             // 
             btnThoat.BackColor = SystemColors.ButtonFace;
+            btnThoat.Cursor = Cursors.Hand;
             btnThoat.Image = (Image)resources.GetObject("btnThoat.Image");
             btnThoat.ImageAlign = ContentAlignment.MiddleLeft;
             btnThoat.Location = new Point(278, 490);

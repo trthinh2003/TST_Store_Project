@@ -74,6 +74,8 @@
             lblCountOrder = new Label();
             pictureBox9 = new PictureBox();
             label3 = new Label();
+            btnQLNhapHang = new Button();
+            pictureBox1 = new PictureBox();
             pnLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbBtnQLTaiKhoan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbBtnKhachHang).BeginInit();
@@ -99,11 +101,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pnLeft
             // 
             pnLeft.BackColor = Color.LightSeaGreen;
+            pnLeft.Controls.Add(pictureBox1);
+            pnLeft.Controls.Add(btnQLNhapHang);
             pnLeft.Controls.Add(ptbBtnQLTaiKhoan);
             pnLeft.Controls.Add(btnTaiKhoan);
             pnLeft.Controls.Add(ptbBtnKhachHang);
@@ -642,6 +647,32 @@
             label3.TabIndex = 12;
             label3.Text = "Số lượng đơn hàng:";
             // 
+            // btnQLNhapHang
+            // 
+            btnQLNhapHang.BackColor = Color.LightSeaGreen;
+            btnQLNhapHang.Cursor = Cursors.Hand;
+            btnQLNhapHang.Dock = DockStyle.Top;
+            btnQLNhapHang.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnQLNhapHang.ForeColor = Color.White;
+            btnQLNhapHang.Location = new Point(0, 608);
+            btnQLNhapHang.Name = "btnQLNhapHang";
+            btnQLNhapHang.Size = new Size(291, 58);
+            btnQLNhapHang.TabIndex = 14;
+            btnQLNhapHang.Text = "       QL Nhập hàng";
+            btnQLNhapHang.UseVisualStyleBackColor = false;
+            btnQLNhapHang.Click += btnQLNhapHang_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new Point(12, 614);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(65, 46);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
             // FormTrangChu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -684,6 +715,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -734,5 +766,7 @@
         private Label label9;
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
+        private Button btnQLNhapHang;
+        private PictureBox pictureBox1;
     }
 }

@@ -154,7 +154,7 @@ namespace QL_CuaHangVatTuNongNghiep
         private void btnThemHangHoa_Click(object sender, EventArgs e)
         {
             btnDatLaiHangHoa_Click(sender, e);
-            modify.LayMaHangHoaMaxNapVaoTextBox("SELECT DISTINCT IDENT_CURRENT('HangHoa')+1 FROM HangHoa;", txtMaHangHoa);
+            modify.LayMaMaxNapVaoTextBox("SELECT DISTINCT IDENT_CURRENT('HangHoa') + 1 FROM HangHoa;", txtMaHangHoa);
         }
 
         private void btnDatLaiHangHoa_Click(object sender, EventArgs e)
@@ -259,7 +259,7 @@ namespace QL_CuaHangVatTuNongNghiep
         private void btnThemPhieuNhap_Click(object sender, EventArgs e)
         {
             btnDatLaiPhieuNhap_Click(sender, e);
-            modify.LayMaHangHoaMaxNapVaoTextBox("SELECT IDENT_CURRENT('PhieuNhapHang')+1 FROM PhieuNhapHang", txtSTTPhieuNhap);
+            modify.LayMaMaxNapVaoTextBox("SELECT IDENT_CURRENT('PhieuNhapHang')+1 FROM PhieuNhapHang", txtSTTPhieuNhap);
         }
 
         private void btnLuuPhieuNhap_Click(object sender, EventArgs e)

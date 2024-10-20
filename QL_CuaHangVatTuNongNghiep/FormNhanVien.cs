@@ -273,7 +273,7 @@ namespace QL_CuaHangVatTuNongNghiep
             try
             {
                 FormXacNhanXoaNhanVien frmXacNhan = new FormXacNhanXoaNhanVien();
-                if (frmXacNhan.ShowDialog() == DialogResult.OK) 
+                if (frmXacNhan.ShowDialog() == DialogResult.OK)
                 {
                     SqlCommand command = new SqlCommand();
                     command.CommandType = CommandType.Text;
@@ -322,6 +322,11 @@ namespace QL_CuaHangVatTuNongNghiep
                     dgvNhanVien.DataSource = modify.DataTable(sql_timkiem);
                 }
             }
+        }
+
+        private void btnHienThiMatKhau_Leave(object sender, EventArgs e)
+        {
+            txtMatKhau.PasswordChar = '*';
         }
     }
 }

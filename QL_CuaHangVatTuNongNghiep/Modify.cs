@@ -199,7 +199,7 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
-        public void LayMaHangHoaMaxNapVaoTextBox(string query, TextBox tb)
+        public void LayMaMaxNapVaoTextBox(string query, TextBox tb)
         {
             using (SqlConnection conn = Connection.GetSqlConnection())
             {
@@ -208,7 +208,8 @@ namespace QL_CuaHangVatTuNongNghiep
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    tb.Text = reader[0].ToString();
+                    if (!reader.IsDBNull(0)) tb.Text = reader[0].ToString();
+                    else tb.Text = "0";
                 }
                 reader.Close();
                 tb.Enabled = false;
@@ -248,7 +249,7 @@ namespace QL_CuaHangVatTuNongNghiep
         }
 
         //Xử lý bên FormDonHang
-        public void CommandLayTTKHTuSDT(string query, KhachHang kh)
+        public void CommandLayTTKH(string query, KhachHang kh)
         {
             using (SqlConnection conn = Connection.GetSqlConnection())
             {
@@ -284,6 +285,87 @@ namespace QL_CuaHangVatTuNongNghiep
                 reader.Close();
                 conn.Close();
             }
+        }
+
+        public void LayLoaiHangTuMaHang(string query, ref int maLoai, ref string tenLoai)
+        {
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                command = new SqlCommand(query, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    maLoai = reader.GetInt32(0);
+                    tenLoai = reader.GetString(1);
+                }
+                reader.Close();
+                conn.Close();
+            }
+        }
+
+        public void LaySoLuong(string query, ref int soLuong)
+        {
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                command = new SqlCommand(query, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    if (!reader.IsDBNull(0)) soLuong = reader.GetInt32(0);
+                    else soLuong = -1;
+                }
+                reader.Close();
+                conn.Close();
+            }
+        }
+        public void CommandThemDonHang(string query, int maNV, int maKH)
+        {
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                //@ngaylap, @manv, @makh
+                command = new SqlCommand(query, conn);
+                command.Parameters.Add("@ngaylap", SqlDbType.DateTime).Value = DateTime.Now.ToString();
+                command.Parameters.AddWithValue("@manv", maNV);
+                command.Parameters.AddWithValue("@makh", maKH);
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+        public void CommandThemDonHang(string query, int maHD, int maHang, int soLuong, float donGia)
+        {
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                //@mahoadon, @mahang, @soluong, @dongia)
+                command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@mahoadon", maHD);
+                command.Parameters.AddWithValue("@mahang", maHang);
+                command.Parameters.AddWithValue("@soluong", soLuong);
+                command.Parameters.AddWithValue("@dongia", donGia);
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+
+        public double LayTongTienDonHang(string query)
+        {
+            double tongTien = 0.0;
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                command = new SqlCommand(query, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    tongTien = reader.GetDouble(0);
+                }
+                reader.Close();
+                conn.Close();
+            }
+            return tongTien;
         }
     }
 }

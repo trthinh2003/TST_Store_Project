@@ -111,7 +111,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void btnTaoDonHang_Click(object sender, EventArgs e)
         {
-            moFormCon(new FormDonHang());
+            moFormCon(new FormDonHang(tempDN));
             resetMauCacButton();
             btnTaoDonHang.ForeColor = Color.OliveDrab;
             lblFormName.Text = "Thông tin đơn hàng";

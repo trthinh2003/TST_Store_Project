@@ -498,7 +498,7 @@
             btnDatLaiPhieuNhap.ForeColor = SystemColors.ButtonHighlight;
             btnDatLaiPhieuNhap.Image = (Image)resources.GetObject("btnDatLaiPhieuNhap.Image");
             btnDatLaiPhieuNhap.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDatLaiPhieuNhap.Location = new Point(482, 647);
+            btnDatLaiPhieuNhap.Location = new Point(483, 647);
             btnDatLaiPhieuNhap.Name = "btnDatLaiPhieuNhap";
             btnDatLaiPhieuNhap.Size = new Size(118, 55);
             btnDatLaiPhieuNhap.TabIndex = 5;
@@ -513,7 +513,7 @@
             btnXoaPhieuNhap.Cursor = Cursors.Hand;
             btnXoaPhieuNhap.Font = new Font("Segoe UI", 12F);
             btnXoaPhieuNhap.ForeColor = SystemColors.ButtonHighlight;
-            btnXoaPhieuNhap.Location = new Point(385, 647);
+            btnXoaPhieuNhap.Location = new Point(386, 647);
             btnXoaPhieuNhap.Name = "btnXoaPhieuNhap";
             btnXoaPhieuNhap.Size = new Size(91, 56);
             btnXoaPhieuNhap.TabIndex = 5;
@@ -526,7 +526,7 @@
             btnSuaPhieuNhap.Cursor = Cursors.Hand;
             btnSuaPhieuNhap.Font = new Font("Segoe UI", 12F);
             btnSuaPhieuNhap.ForeColor = SystemColors.ButtonHighlight;
-            btnSuaPhieuNhap.Location = new Point(290, 647);
+            btnSuaPhieuNhap.Location = new Point(291, 647);
             btnSuaPhieuNhap.Name = "btnSuaPhieuNhap";
             btnSuaPhieuNhap.Size = new Size(89, 56);
             btnSuaPhieuNhap.TabIndex = 5;
@@ -539,7 +539,7 @@
             btnLuuPhieuNhap.Cursor = Cursors.Hand;
             btnLuuPhieuNhap.Font = new Font("Segoe UI", 12F);
             btnLuuPhieuNhap.ForeColor = SystemColors.ButtonHighlight;
-            btnLuuPhieuNhap.Location = new Point(203, 647);
+            btnLuuPhieuNhap.Location = new Point(204, 647);
             btnLuuPhieuNhap.Name = "btnLuuPhieuNhap";
             btnLuuPhieuNhap.Size = new Size(81, 56);
             btnLuuPhieuNhap.TabIndex = 5;
@@ -561,7 +561,7 @@
             btnThemPhieuNhap.Cursor = Cursors.Hand;
             btnThemPhieuNhap.Font = new Font("Segoe UI", 12F);
             btnThemPhieuNhap.ForeColor = SystemColors.ButtonHighlight;
-            btnThemPhieuNhap.Location = new Point(99, 648);
+            btnThemPhieuNhap.Location = new Point(100, 648);
             btnThemPhieuNhap.Name = "btnThemPhieuNhap";
             btnThemPhieuNhap.Size = new Size(98, 55);
             btnThemPhieuNhap.TabIndex = 5;

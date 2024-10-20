@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|e:\\doanqlvattunongnghiep\\tst_store_project\\ql_cuahangvattunongnghiep\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|e:\\doanqlvattunongnghiep\\tst_store_project\\ql_cuahangvattunongnghiep\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|e:\\doanqlvattunongnghiep\\tst_store_project\\ql_cuahangvattunongnghiep\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DE54BA-610B-476D-9E56-65E9B5A25B73}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Modify.cs",
+              "DocumentMoniker": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "ToolTip": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\Modify.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA/wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:00:34.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormDonHang.cs [Design]",
+              "DocumentMoniker": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormDonHang.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormDonHang.cs",
+              "ToolTip": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormDonHang.cs [Design]",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormDonHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T11:46:19.82Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormDonHang.cs",
+              "DocumentMoniker": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormDonHang.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormDonHang.cs",
+              "ToolTip": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormDonHang.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormDonHang.cs",
+              "ViewState": "AgIAACkBAAAAAAAAAAA4wDABAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T02:23:42.962Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

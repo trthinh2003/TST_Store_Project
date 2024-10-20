@@ -96,6 +96,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormXacNhanXoaNhanVien";
+            ShowIcon = false;
             StartPosition = FormStartPosition.CenterParent;
             Text = "Thông báo";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

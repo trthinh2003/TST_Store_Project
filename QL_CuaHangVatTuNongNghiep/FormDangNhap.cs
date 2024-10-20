@@ -52,7 +52,11 @@ namespace QL_CuaHangVatTuNongNghiep
                         frmTrangChu.FormClosed += (s, args) => this.Close();
                         frmTrangChu.ShowDialog();
                     }
-                    else MessageBox.Show("Tài khoản không tồn tại!");
+                    else
+                    {
+                        MessageBox.Show("Tài khoản không tồn tại!");
+                        txtMatKhau.Text = "";
+                    }
                 }
                 catch (Exception ex)
                 {

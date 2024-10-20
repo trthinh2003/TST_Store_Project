@@ -109,6 +109,7 @@
             btnHienThiMatKhau.TabIndex = 15;
             btnHienThiMatKhau.UseVisualStyleBackColor = false;
             btnHienThiMatKhau.Click += btnHienThiMatKhau_Click;
+            btnHienThiMatKhau.Leave += btnHienThiMatKhau_Leave;
             // 
             // label10
             // 

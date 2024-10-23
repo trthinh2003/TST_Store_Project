@@ -15,6 +15,8 @@ namespace QL_CuaHangVatTuNongNghiep
         private byte[] hinhAnh;
         private int maLoai;
 
+        public HangHoa() { }
+
         public HangHoa(int maHangHoa, string tenHang)
         {
             this.maHangHoa = maHangHoa;

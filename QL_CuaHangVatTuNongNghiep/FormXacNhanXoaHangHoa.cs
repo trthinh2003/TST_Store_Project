@@ -26,10 +26,5 @@ namespace QL_CuaHangVatTuNongNghiep
         {
             this.Hide();
         }
-
-        private void FormXacNhanXoaHangHoa_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

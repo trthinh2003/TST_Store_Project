@@ -17,17 +17,12 @@ namespace QL_CuaHangVatTuNongNghiep
             InitializeComponent();
         }
 
-        private void FormXacNhanXoaKhachHang_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCo_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
         }
 
-        private void btnKhong_Click_1(object sender, EventArgs e)
+        private void btnKhong_Click(object sender, EventArgs e)
         {
             this.Hide();
         }

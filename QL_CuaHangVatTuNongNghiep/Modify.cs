@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -155,7 +154,7 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
-                public void CommandXoaHangHoa(HangHoa hangHoa, string query)
+        public void CommandXoaHangHoa(HangHoa hangHoa, string query)
         {
             using (SqlConnection conn = Connection.GetSqlConnection())
             {
@@ -204,7 +203,7 @@ namespace QL_CuaHangVatTuNongNghiep
             using (SqlConnection conn = Connection.GetSqlConnection())
             {
                 conn.Open();
-                command = new SqlCommand (query, conn);
+                command = new SqlCommand(query, conn);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {

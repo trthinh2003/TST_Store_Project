@@ -1,7 +1,12 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QL_CuaHangVatTuNongNghiep
 {
@@ -11,9 +16,11 @@ namespace QL_CuaHangVatTuNongNghiep
         {
             InitializeComponent();
         }
+
         Modify modify = new Modify();
         NhanVien nhanVien;
         public int tempDN;
+
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
 
@@ -25,10 +32,17 @@ namespace QL_CuaHangVatTuNongNghiep
             Environment.Exit(0);
         }
 
-        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        private void layDuLieu()
         {
-            txtMatKhau.PasswordChar = '*';
+            string tenDangNhap = txtTenDangNhap.Text;
+            string matKhau = txtMatKhau.Text;
+            nhanVien = new NhanVien(tenDangNhap, matKhau);
+            //modify.LayThongTinNhanVien("SELECT MaNV, TenNV, GioiTinh, EmailNV, DiaChiNV, SDTNV, ChucVu " +
+            //                           "FROM NhanVien " +
+            //                           "WHERE TenDangNhap = @tendangnhap AND MatKhau = @matkhau;", nhanVien);
+
         }
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             if (txtTenDangNhap.Text.Length == 0)
@@ -63,23 +77,6 @@ namespace QL_CuaHangVatTuNongNghiep
                     MessageBox.Show(ex.Message);
                 }
             }
-        }
-
-        private void layDuLieu()
-        {
-            string tenDangNhap = txtTenDangNhap.Text;
-            string matKhau = txtMatKhau.Text;
-            nhanVien = new NhanVien(tenDangNhap, matKhau);
-            //modify.LayThongTinNhanVien("SELECT MaNV, TenNV, GioiTinh, EmailNV, DiaChiNV, SDTNV, ChucVu " +
-            //                           "FROM NhanVien " +
-            //                           "WHERE TenDangNhap = @tendangnhap AND MatKhau = @matkhau;", nhanVien);
-
-        }
-
-        private void resetTenDangNhapVaMatKhau()
-        {
-            txtTenDangNhap.Text = "";
-            txtMatKhau.Text = "";
         }
 
         private void txtMatKhau_KeyDown(object sender, KeyEventArgs e)

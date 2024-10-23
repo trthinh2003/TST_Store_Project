@@ -28,319 +28,318 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKhachHang));
-            dgvKhachHang = new DataGridView();
-            txtTimKiem = new TextBox();
-            label1 = new Label();
-            label7 = new Label();
-            btnXoaKhachHang = new Button();
-            btnSuaThongTin = new Button();
-            btnThemKhachHang = new Button();
-            txtSoDienThoai = new TextBox();
-            txtDiaChiKhachHang = new TextBox();
-            groupBox1 = new GroupBox();
-            btnLuuThongTin = new Button();
-            btnDatLai = new Button();
-            txtEmailKhachHang = new TextBox();
-            txtMaKhachHang = new TextBox();
-            txtTenKhachHang = new TextBox();
-            label4 = new Label();
-            label6 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dgvKhachHang).BeginInit();
-            groupBox1.SuspendLayout();
-            SuspendLayout();
-            // 
-            // dgvKhachHang
-            // 
-            dgvKhachHang.AllowUserToAddRows = false;
-            dgvKhachHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvKhachHang.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.Teal;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 14F);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = Color.Teal;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgvKhachHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKhachHang.EnableHeadersVisualStyles = false;
-            dgvKhachHang.Location = new Point(72, 83);
-            dgvKhachHang.Margin = new Padding(5);
-            dgvKhachHang.Name = "dgvKhachHang";
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.Teal;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 14F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvKhachHang.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvKhachHang.RowHeadersVisible = false;
-            dgvKhachHang.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dgvKhachHang.RowTemplate.Height = 32;
-            dgvKhachHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvKhachHang.Size = new Size(1463, 283);
-            dgvKhachHang.TabIndex = 12;
-            dgvKhachHang.CellClick += dgvKhachHang_CellClick;
-            // 
-            // txtTimKiem
-            // 
-            txtTimKiem.BackColor = SystemColors.HighlightText;
-            txtTimKiem.Location = new Point(196, 21);
-            txtTimKiem.Multiline = true;
-            txtTimKiem.Name = "txtTimKiem";
-            txtTimKiem.Size = new Size(464, 39);
-            txtTimKiem.TabIndex = 13;
-            txtTimKiem.KeyDown += txtTimKiem_KeyDown;
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDatLai = new System.Windows.Forms.Button();
+            this.btnXoaKhachHang = new System.Windows.Forms.Button();
+            this.btnSuaThongTin = new System.Windows.Forms.Button();
+            this.btnLuuThongTin = new System.Windows.Forms.Button();
+            this.btnThemKhachHang = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSoDienThoai = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDiaChiKhachHang = new System.Windows.Forms.TextBox();
+            this.txtTenKhachHang = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEmailKhachHang = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtMaKhachHang = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F);
-            label1.Location = new Point(72, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(118, 32);
-            label1.TabIndex = 14;
-            label1.Text = "Tìm kiếm:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label1.Location = new System.Drawing.Point(66, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Tìm kiếm:";
             // 
-            // label7
+            // txtTimKiem
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 13F);
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(220, 208);
-            label7.Name = "label7";
-            label7.Size = new Size(145, 30);
-            label7.TabIndex = 11;
-            label7.Text = "Số điện thoại:";
+            this.txtTimKiem.Location = new System.Drawing.Point(167, 13);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(374, 27);
+            this.txtTimKiem.TabIndex = 1;
+            this.txtTimKiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTimKiem_KeyDown);
             // 
-            // btnXoaKhachHang
+            // dgvKhachHang
             // 
-            btnXoaKhachHang.BackColor = Color.Teal;
-            btnXoaKhachHang.Cursor = Cursors.Hand;
-            btnXoaKhachHang.Font = new Font("Segoe UI", 14F);
-            btnXoaKhachHang.ForeColor = SystemColors.ButtonHighlight;
-            btnXoaKhachHang.Location = new Point(846, 281);
-            btnXoaKhachHang.Name = "btnXoaKhachHang";
-            btnXoaKhachHang.Size = new Size(211, 67);
-            btnXoaKhachHang.TabIndex = 9;
-            btnXoaKhachHang.Text = "Xóa Khách Hàng";
-            btnXoaKhachHang.UseVisualStyleBackColor = false;
-            btnXoaKhachHang.Click += btnXoaKhachHang_Click;
-            // 
-            // btnSuaThongTin
-            // 
-            btnSuaThongTin.BackColor = Color.Teal;
-            btnSuaThongTin.Cursor = Cursors.Hand;
-            btnSuaThongTin.Font = new Font("Segoe UI", 14F);
-            btnSuaThongTin.ForeColor = SystemColors.ButtonHighlight;
-            btnSuaThongTin.Location = new Point(646, 281);
-            btnSuaThongTin.Name = "btnSuaThongTin";
-            btnSuaThongTin.Size = new Size(178, 67);
-            btnSuaThongTin.TabIndex = 8;
-            btnSuaThongTin.Text = "Sửa thông tin";
-            btnSuaThongTin.UseVisualStyleBackColor = false;
-            btnSuaThongTin.Click += btnSuaThongTin_Click;
-            // 
-            // btnThemKhachHang
-            // 
-            btnThemKhachHang.BackColor = Color.Teal;
-            btnThemKhachHang.Cursor = Cursors.Hand;
-            btnThemKhachHang.Font = new Font("Segoe UI", 14F);
-            btnThemKhachHang.ForeColor = SystemColors.ButtonHighlight;
-            btnThemKhachHang.Location = new Point(194, 281);
-            btnThemKhachHang.Name = "btnThemKhachHang";
-            btnThemKhachHang.Size = new Size(220, 67);
-            btnThemKhachHang.TabIndex = 6;
-            btnThemKhachHang.Text = "Thêm Khách Hàng";
-            btnThemKhachHang.UseVisualStyleBackColor = false;
-            btnThemKhachHang.Click += btnThemKhachHang_Click;
-            // 
-            // txtSoDienThoai
-            // 
-            txtSoDienThoai.Font = new Font("Segoe UI", 13F);
-            txtSoDienThoai.Location = new Point(386, 212);
-            txtSoDienThoai.Name = "txtSoDienThoai";
-            txtSoDienThoai.Size = new Size(328, 36);
-            txtSoDienThoai.TabIndex = 3;
-            // 
-            // txtDiaChiKhachHang
-            // 
-            txtDiaChiKhachHang.Font = new Font("Segoe UI", 13F);
-            txtDiaChiKhachHang.Location = new Point(866, 143);
-            txtDiaChiKhachHang.Name = "txtDiaChiKhachHang";
-            txtDiaChiKhachHang.Size = new Size(328, 36);
-            txtDiaChiKhachHang.TabIndex = 5;
+            this.dgvKhachHang.AllowUserToAddRows = false;
+            this.dgvKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKhachHang.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.EnableHeadersVisualStyles = false;
+            this.dgvKhachHang.GridColor = System.Drawing.SystemColors.WindowFrame;
+            this.dgvKhachHang.Location = new System.Drawing.Point(71, 46);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKhachHang.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvKhachHang.RowHeadersVisible = false;
+            this.dgvKhachHang.RowHeadersWidth = 51;
+            this.dgvKhachHang.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dgvKhachHang.RowTemplate.Height = 24;
+            this.dgvKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvKhachHang.Size = new System.Drawing.Size(1143, 195);
+            this.dgvKhachHang.TabIndex = 2;
+            this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = SystemColors.Control;
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(btnLuuThongTin);
-            groupBox1.Controls.Add(btnDatLai);
-            groupBox1.Controls.Add(btnXoaKhachHang);
-            groupBox1.Controls.Add(btnSuaThongTin);
-            groupBox1.Controls.Add(btnThemKhachHang);
-            groupBox1.Controls.Add(txtSoDienThoai);
-            groupBox1.Controls.Add(txtDiaChiKhachHang);
-            groupBox1.Controls.Add(txtEmailKhachHang);
-            groupBox1.Controls.Add(txtMaKhachHang);
-            groupBox1.Controls.Add(txtTenKhachHang);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            groupBox1.Location = new Point(72, 388);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1463, 381);
-            groupBox1.TabIndex = 15;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Thông tin khách hàng";
-            // 
-            // btnLuuThongTin
-            // 
-            btnLuuThongTin.BackColor = Color.Teal;
-            btnLuuThongTin.Font = new Font("Segoe UI", 14F);
-            btnLuuThongTin.ForeColor = SystemColors.ButtonHighlight;
-            btnLuuThongTin.Location = new Point(440, 281);
-            btnLuuThongTin.Name = "btnLuuThongTin";
-            btnLuuThongTin.Size = new Size(176, 67);
-            btnLuuThongTin.TabIndex = 7;
-            btnLuuThongTin.Text = "Lưu thông tin";
-            btnLuuThongTin.UseVisualStyleBackColor = false;
-            btnLuuThongTin.Click += btnLuuThongTin_Click;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.btnDatLai);
+            this.groupBox1.Controls.Add(this.btnXoaKhachHang);
+            this.groupBox1.Controls.Add(this.btnSuaThongTin);
+            this.groupBox1.Controls.Add(this.btnLuuThongTin);
+            this.groupBox1.Controls.Add(this.btnThemKhachHang);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtSoDienThoai);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtDiaChiKhachHang);
+            this.groupBox1.Controls.Add(this.txtTenKhachHang);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtEmailKhachHang);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtMaKhachHang);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Location = new System.Drawing.Point(71, 263);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1143, 300);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin khách hàng";
             // 
             // btnDatLai
             // 
-            btnDatLai.BackColor = Color.Teal;
-            btnDatLai.Cursor = Cursors.Hand;
-            btnDatLai.Font = new Font("Segoe UI", 14F);
-            btnDatLai.ForeColor = SystemColors.ButtonHighlight;
-            btnDatLai.Image = (Image)resources.GetObject("btnDatLai.Image");
-            btnDatLai.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDatLai.Location = new Point(1076, 281);
-            btnDatLai.Name = "btnDatLai";
-            btnDatLai.Size = new Size(144, 67);
-            btnDatLai.TabIndex = 10;
-            btnDatLai.Text = "Đặt lại";
-            btnDatLai.TextAlign = ContentAlignment.MiddleRight;
-            btnDatLai.UseVisualStyleBackColor = false;
-            btnDatLai.Click += btnDatLai_Click;
+            this.btnDatLai.BackColor = System.Drawing.Color.Teal;
+            this.btnDatLai.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDatLai.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnDatLai.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDatLai.Image = ((System.Drawing.Image)(resources.GetObject("btnDatLai.Image")));
+            this.btnDatLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDatLai.Location = new System.Drawing.Point(872, 221);
+            this.btnDatLai.Name = "btnDatLai";
+            this.btnDatLai.Size = new System.Drawing.Size(121, 60);
+            this.btnDatLai.TabIndex = 10;
+            this.btnDatLai.Text = "Đặt lại";
+            this.btnDatLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDatLai.UseVisualStyleBackColor = false;
+            this.btnDatLai.Click += new System.EventHandler(this.btnDatLai_Click);
             // 
-            // txtEmailKhachHang
+            // btnXoaKhachHang
             // 
-            txtEmailKhachHang.Font = new Font("Segoe UI", 13F);
-            txtEmailKhachHang.Location = new Point(866, 84);
-            txtEmailKhachHang.Name = "txtEmailKhachHang";
-            txtEmailKhachHang.Size = new Size(328, 36);
-            txtEmailKhachHang.TabIndex = 4;
+            this.btnXoaKhachHang.BackColor = System.Drawing.Color.Teal;
+            this.btnXoaKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoaKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnXoaKhachHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXoaKhachHang.Location = new System.Drawing.Point(696, 221);
+            this.btnXoaKhachHang.Name = "btnXoaKhachHang";
+            this.btnXoaKhachHang.Size = new System.Drawing.Size(170, 60);
+            this.btnXoaKhachHang.TabIndex = 9;
+            this.btnXoaKhachHang.Text = "Xóa khách hàng";
+            this.btnXoaKhachHang.UseVisualStyleBackColor = false;
+            this.btnXoaKhachHang.Click += new System.EventHandler(this.btnXoaKhachHang_Click);
             // 
-            // txtMaKhachHang
+            // btnSuaThongTin
             // 
-            txtMaKhachHang.Font = new Font("Segoe UI", 13F);
-            txtMaKhachHang.Location = new Point(386, 84);
-            txtMaKhachHang.Name = "txtMaKhachHang";
-            txtMaKhachHang.Size = new Size(328, 36);
-            txtMaKhachHang.TabIndex = 1;
+            this.btnSuaThongTin.BackColor = System.Drawing.Color.Teal;
+            this.btnSuaThongTin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSuaThongTin.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnSuaThongTin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSuaThongTin.Location = new System.Drawing.Point(522, 221);
+            this.btnSuaThongTin.Name = "btnSuaThongTin";
+            this.btnSuaThongTin.Size = new System.Drawing.Size(158, 60);
+            this.btnSuaThongTin.TabIndex = 8;
+            this.btnSuaThongTin.Text = "Sửa thông tin";
+            this.btnSuaThongTin.UseVisualStyleBackColor = false;
+            this.btnSuaThongTin.Click += new System.EventHandler(this.btnSuaThongTin_Click);
             // 
-            // txtTenKhachHang
+            // btnLuuThongTin
             // 
-            txtTenKhachHang.Font = new Font("Segoe UI", 13F);
-            txtTenKhachHang.Location = new Point(386, 146);
-            txtTenKhachHang.Name = "txtTenKhachHang";
-            txtTenKhachHang.Size = new Size(328, 36);
-            txtTenKhachHang.TabIndex = 2;
+            this.btnLuuThongTin.BackColor = System.Drawing.Color.Teal;
+            this.btnLuuThongTin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuuThongTin.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnLuuThongTin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLuuThongTin.Location = new System.Drawing.Point(347, 221);
+            this.btnLuuThongTin.Name = "btnLuuThongTin";
+            this.btnLuuThongTin.Size = new System.Drawing.Size(158, 60);
+            this.btnLuuThongTin.TabIndex = 7;
+            this.btnLuuThongTin.Text = "Lưu thông tin";
+            this.btnLuuThongTin.UseVisualStyleBackColor = false;
+            this.btnLuuThongTin.Click += new System.EventHandler(this.btnLuuThongTin_Click);
+            // 
+            // btnThemKhachHang
+            // 
+            this.btnThemKhachHang.BackColor = System.Drawing.Color.Teal;
+            this.btnThemKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnThemKhachHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThemKhachHang.Location = new System.Drawing.Point(156, 221);
+            this.btnThemKhachHang.Name = "btnThemKhachHang";
+            this.btnThemKhachHang.Size = new System.Drawing.Size(175, 60);
+            this.btnThemKhachHang.TabIndex = 6;
+            this.btnThemKhachHang.Text = "Thêm khách hàng";
+            this.btnThemKhachHang.UseVisualStyleBackColor = false;
+            this.btnThemKhachHang.Click += new System.EventHandler(this.btnThemKhachHang_Click);
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13F);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(777, 84);
-            label4.Name = "label4";
-            label4.Size = new Size(69, 30);
-            label4.TabIndex = 0;
-            label4.Text = "Email:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label4.Location = new System.Drawing.Point(151, 163);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(132, 28);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Số điện thoại:";
+            // 
+            // txtSoDienThoai
+            // 
+            this.txtSoDienThoai.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(297, 163);
+            this.txtSoDienThoai.Name = "txtSoDienThoai";
+            this.txtSoDienThoai.Size = new System.Drawing.Size(240, 34);
+            this.txtSoDienThoai.TabIndex = 3;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 13F);
-            label6.ForeColor = Color.Black;
-            label6.Location = new Point(777, 149);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 30);
-            label6.TabIndex = 0;
-            label6.Text = "Địa chỉ:";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label6.Location = new System.Drawing.Point(673, 104);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 28);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Địa chỉ:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13F);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(220, 149);
-            label3.Name = "label3";
-            label3.Size = new Size(168, 30);
-            label3.TabIndex = 0;
-            label3.Text = "Tên khách hàng:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label3.Location = new System.Drawing.Point(151, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(150, 28);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên khách hàng:";
+            // 
+            // txtDiaChiKhachHang
+            // 
+            this.txtDiaChiKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtDiaChiKhachHang.Location = new System.Drawing.Point(753, 106);
+            this.txtDiaChiKhachHang.Name = "txtDiaChiKhachHang";
+            this.txtDiaChiKhachHang.Size = new System.Drawing.Size(240, 34);
+            this.txtDiaChiKhachHang.TabIndex = 5;
+            // 
+            // txtTenKhachHang
+            // 
+            this.txtTenKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtTenKhachHang.Location = new System.Drawing.Point(297, 105);
+            this.txtTenKhachHang.Name = "txtTenKhachHang";
+            this.txtTenKhachHang.Size = new System.Drawing.Size(240, 34);
+            this.txtTenKhachHang.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label5.Location = new System.Drawing.Point(673, 49);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 28);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Email:";
+            // 
+            // txtEmailKhachHang
+            // 
+            this.txtEmailKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtEmailKhachHang.Location = new System.Drawing.Point(753, 49);
+            this.txtEmailKhachHang.Name = "txtEmailKhachHang";
+            this.txtEmailKhachHang.Size = new System.Drawing.Size(240, 34);
+            this.txtEmailKhachHang.TabIndex = 4;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13F);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(220, 84);
-            label2.Name = "label2";
-            label2.Size = new Size(165, 30);
-            label2.TabIndex = 0;
-            label2.Text = "Mã khách hàng:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Location = new System.Drawing.Point(151, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(149, 28);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã khách hàng:";
+            // 
+            // txtMaKhachHang
+            // 
+            this.txtMaKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtMaKhachHang.Location = new System.Drawing.Point(297, 50);
+            this.txtMaKhachHang.Name = "txtMaKhachHang";
+            this.txtMaKhachHang.Size = new System.Drawing.Size(149, 34);
+            this.txtMaKhachHang.TabIndex = 1;
+            this.txtMaKhachHang.Tag = "1";
             // 
             // FormKhachHang
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1615, 916);
-            Controls.Add(dgvKhachHang);
-            Controls.Add(txtTimKiem);
-            Controls.Add(label1);
-            Controls.Add(groupBox1);
-            Name = "FormKhachHang";
-            Text = "FormKhachHang";
-            Load += FormKhachHang_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvKhachHang).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1288, 624);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dgvKhachHang);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FormKhachHang";
+            this.Text = "FormKhachHang";
+            this.Load += new System.EventHandler(this.FormKhachHang_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private DataGridView dgvKhachHang;
-        private TextBox txtTimKiem;
-        private Label label1;
-        private Label label7;
-        private Button btnXoaKhachHang;
-        private Button btnSuaThongTin;
-        private Button btnThemKhachHang;
-        private TextBox txtSoDienThoai;
-        private TextBox txtDiaChiKhachHang;
-        private GroupBox groupBox1;
-        private Button btnLuuThongTin;
-        private Button btnDatLai;
-        private TextBox txtEmailKhachHang;
-        private TextBox txtMaKhachHang;
-        private TextBox txtTenKhachHang;
-        private Label label4;
-        private Label label6;
-        private Label label3;
-        private Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtSoDienThoai;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtTenKhachHang;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtMaKhachHang;
+        private System.Windows.Forms.Button btnThemKhachHang;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtDiaChiKhachHang;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtEmailKhachHang;
+        private System.Windows.Forms.Button btnDatLai;
+        private System.Windows.Forms.Button btnXoaKhachHang;
+        private System.Windows.Forms.Button btnSuaThongTin;
+        private System.Windows.Forms.Button btnLuuThongTin;
     }
 }

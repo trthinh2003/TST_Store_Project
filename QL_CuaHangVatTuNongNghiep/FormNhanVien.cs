@@ -1,5 +1,4 @@
-﻿using ketnoi;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +24,7 @@ namespace QL_CuaHangVatTuNongNghiep
         Modify modify = new Modify();
         Ham h = new Ham();
         public SqlConnection conn = null;
+
         private void FormNhanVien_Load(object sender, EventArgs e)
         {
             layTTNV();
@@ -45,6 +45,7 @@ namespace QL_CuaHangVatTuNongNghiep
             dgvNhanVien.Columns["ChucVu"].HeaderText = "Chức Vụ";
             dgvNhanVien.Columns["TenDangNhap"].HeaderText = "Tên Đăng Nhập";
             dgvNhanVien.Columns["MatKhau"].HeaderText = "Mật Khẩu";
+            dgvNhanVien.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -100,8 +101,6 @@ namespace QL_CuaHangVatTuNongNghiep
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
-
-
 
         private void layTTNV()
         {
@@ -161,24 +160,11 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
-        private void btnDatLai_Click(object sender, EventArgs e)
-        {
-            txtMaNhanVien.Text = "";
-            txtTenNhanVien.Text = "";
-            cmbGIoiTinh.Text = "";
-            txtEmailNhanVien.Text = "";
-            txtDiaChiNhanVien.Text = "";
-            txtSoDienThoai.Text = "";
-            cmbChucVu.Text = "";
-            txtTenDangNhap.Text = "";
-            txtMatKhau.Text = "";
-        }
-
         private void btnThemNhanVien_Click(object sender, EventArgs e)
         {
             try
             {
-                string manv_max = "SELECT IDENT_CURRENT('NhanVien') + 1 FROM NhanVien";
+                string manv_max = "SELECT IDENT_CURRENT('NhanVien') + 1";
                 SqlCommand command = new SqlCommand(manv_max, conn);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
@@ -269,7 +255,6 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void btnXoaNhanVien_Click(object sender, EventArgs e)
         {
-
             try
             {
                 FormXacNhanXoaNhanVien frmXacNhan = new FormXacNhanXoaNhanVien();
@@ -297,6 +282,19 @@ namespace QL_CuaHangVatTuNongNghiep
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
+        }
+
+        private void btnDatLai_Click(object sender, EventArgs e)
+        {
+            txtMaNhanVien.Text = "";
+            txtTenNhanVien.Text = "";
+            cmbGIoiTinh.Text = "";
+            txtEmailNhanVien.Text = "";
+            txtDiaChiNhanVien.Text = "";
+            txtSoDienThoai.Text = "";
+            cmbChucVu.Text = "";
+            txtTenDangNhap.Text = "";
+            txtMatKhau.Text = "";
         }
 
         private void btnHienThiMatKhau_Click(object sender, EventArgs e)

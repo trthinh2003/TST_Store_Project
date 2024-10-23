@@ -29,62 +29,84 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormXacNhanXoaHangHoa));
-            label1 = new Label();
-            btnCo = new Button();
-            btnKhong = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
-            // 
-            // btnCo
-            // 
-            btnCo.Cursor = Cursors.Hand;
-            resources.ApplyResources(btnCo, "btnCo");
-            btnCo.Name = "btnCo";
-            btnCo.UseVisualStyleBackColor = true;
-            btnCo.Click += btnCo_Click;
+            this.btnKhong = new System.Windows.Forms.Button();
+            this.btnCo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // btnKhong
             // 
-            btnKhong.Cursor = Cursors.Hand;
-            resources.ApplyResources(btnKhong, "btnKhong");
-            btnKhong.Name = "btnKhong";
-            btnKhong.UseVisualStyleBackColor = true;
-            btnKhong.Click += btnKhong_Click;
+            this.btnKhong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKhong.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnKhong.Location = new System.Drawing.Point(357, 97);
+            this.btnKhong.Name = "btnKhong";
+            this.btnKhong.Size = new System.Drawing.Size(92, 42);
+            this.btnKhong.TabIndex = 7;
+            this.btnKhong.Text = "Không";
+            this.btnKhong.UseVisualStyleBackColor = true;
+            this.btnKhong.Click += new System.EventHandler(this.btnKhong_Click);
+            // 
+            // btnCo
+            // 
+            this.btnCo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCo.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnCo.Location = new System.Drawing.Point(275, 97);
+            this.btnCo.Name = "btnCo";
+            this.btnCo.Size = new System.Drawing.Size(76, 42);
+            this.btnCo.TabIndex = 6;
+            this.btnCo.Text = "Có";
+            this.btnCo.UseVisualStyleBackColor = true;
+            this.btnCo.Click += new System.EventHandler(this.btnCo_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.label1.Location = new System.Drawing.Point(83, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(386, 68);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Bạn có chắc chắn muốn xóa hàng hóa này không?";
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // FormXacNhanXoaHangHoa
             // 
-            resources.ApplyResources(this, "$this");
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
-            Controls.Add(btnKhong);
-            Controls.Add(btnCo);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "FormXacNhanXoaHangHoa";
-            Load += FormXacNhanXoaHangHoa_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(476, 155);
+            this.Controls.Add(this.btnKhong);
+            this.Controls.Add(this.btnCo);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FormXacNhanXoaHangHoa";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "FormXacNhanXoaHangHoa";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-        private Label label1;
-        private Button btnCo;
-        private Button btnKhong;
-        private PictureBox pictureBox1;
+
+        private System.Windows.Forms.Button btnKhong;
+        private System.Windows.Forms.Button btnCo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

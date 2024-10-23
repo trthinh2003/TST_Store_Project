@@ -1,6 +1,4 @@
-﻿using ketnoi;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace QL_CuaHangVatTuNongNghiep
 {
@@ -20,8 +17,8 @@ namespace QL_CuaHangVatTuNongNghiep
         {
             InitializeComponent();
         }
-
         Ham func = new Ham();
+        Modify modify = new Modify();
         SqlConnection conn = null;
         private void FormNhaCungCap_Load(object sender, EventArgs e)
         {
@@ -36,7 +33,6 @@ namespace QL_CuaHangVatTuNongNghiep
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void DoiTenCotDGNhaCungCap(DataGridView dg)
         {
             dgvNCC.Columns["MaNhaCungCap"].HeaderText = "Mã Nhà Cung Cấp";
@@ -44,31 +40,13 @@ namespace QL_CuaHangVatTuNongNghiep
             dgvNCC.Columns["SoDienThoaiNhaCungCap"].HeaderText = "Số Điện Thoại";
             dgvNCC.Columns["EmailNhaCungCap"].HeaderText = "Email";
             dgvNCC.Columns["DiaChiNhaCungCap"].HeaderText = "Địa Chỉ";
+            dgvNCC.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
 
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void LayMaNhaCungCapMax(string query, TextBox tb)
-        {
-            SqlCommand command = new SqlCommand(query, conn);
-            SqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
-            {
-                tb.Text = reader.GetInt32(0).ToString();
-            }
-            reader.Close();
-            tb.Enabled = false;
-        }
-
-
-
 
         private void dgvNCC_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex == -1) return;
+            if(e.RowIndex == -1) return;
             DataGridViewRow row = new DataGridViewRow();
             row = dgvNCC.Rows[e.RowIndex];
             txtMaNhaCungCap.Text = row.Cells[0].Value.ToString();
@@ -82,10 +60,8 @@ namespace QL_CuaHangVatTuNongNghiep
         private void btnThemNhaCungCap_Click(object sender, EventArgs e)
         {
             btnDatLai_Click(sender, e);
-            LayMaNhaCungCapMax("SELECT MAX(MaNhaCungCap) + 1 FROM NhaCungCap;", txtMaNhaCungCap);
-
+            modify.LayMaMaxNapVaoTextBox("SELECT IDENT_CURRENT('NhaCungCap') + 1", txtMaNhaCungCap);
         }
-
 
         private void btnLuuThongTin_Click(object sender, EventArgs e)
         {
@@ -118,15 +94,6 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
-        private void btnDatLai_Click(object sender, EventArgs e)
-        {
-            txtMaNhaCungCap.Text = "";
-            txtTenNhaCungCap.Text = "";
-            txtDiachi.Text = "";
-            txtEmail.Text = "";
-            txtSDT.Text = "";
-        }
-
         private void btnSuaThongTin_Click(object sender, EventArgs e)
         {
             try
@@ -145,7 +112,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
 
                 //cmd.Parameters.Add("@mancc", SqlDbType.Int).Value = manhacungcap; // lay gia tri ma tu bien manhacungcap trong datagridview
-              
+
                 cmd.Connection = conn;
                 int ret = cmd.ExecuteNonQuery();
 
@@ -166,7 +133,7 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
-        private void btnXoaHangHoa_Click(object sender, EventArgs e)
+        private void btnXoaNhaCungCap_Click(object sender, EventArgs e)
         {
             try
             {
@@ -200,6 +167,15 @@ namespace QL_CuaHangVatTuNongNghiep
             {
                 MessageBox.Show("Nhập Liệu Chưa Đầy Đủ !!!");
             }
+        }
+
+        private void btnDatLai_Click(object sender, EventArgs e)
+        {
+            txtMaNhaCungCap.Text = "";
+            txtTenNhaCungCap.Text = "";
+            txtDiachi.Text = "";
+            txtEmail.Text = "";
+            txtSDT.Text = "";
         }
 
         private void txtKeyWord_KeyDown(object sender, KeyEventArgs e)

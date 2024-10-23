@@ -1,17 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Data.SqlClient;
-using System.Collections;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
-using System.Text.RegularExpressions;
 
 namespace QL_CuaHangVatTuNongNghiep
 {
@@ -26,18 +23,25 @@ namespace QL_CuaHangVatTuNongNghiep
         NhaCungCap nhaCungCap;
         int maNCC;
         int maHang;
+
         private void FormHangHoa_Load(object sender, EventArgs e)
         {
             string query = "SELECT c.MaNhaCungCap, h.MaHang, h.TenHang, h.DVT, h.GiaNiemYet, h.HinhAnh, l.MaLoai, l.TenLoai, ncc.TenNhaCungCap " +
-                           "FROM HangHoa h, LoaiHang l, CungCap c, NhaCungCap ncc " +
-                           "WHERE h.MaLoai = l.MaLoai " +
-                           "AND h.MaHang = c.MaHang " +
-                           "AND c.MaNhaCungCap = ncc.MaNhaCungCap " +
-                           "ORDER BY c.MaNhaCungCap";
-            dgvHangHoa.DataSource = modify.DataTable(query);
+                          "FROM HangHoa h, LoaiHang l, CungCap c, NhaCungCap ncc " +
+                          "WHERE h.MaLoai = l.MaLoai " +
+                          "AND h.MaHang = c.MaHang " +
+                          "AND c.MaNhaCungCap = ncc.MaNhaCungCap " +
+                          "ORDER BY c.MaNhaCungCap";
+            HienThiDGHangHoa(query);
             DieuChinhCacCotDG(dgvHangHoa);
             modify.HienThiCombobox("SELECT MaLoai, TenLoai FROM LoaiHang", cboTenLoaiHangHoa, "TenLoai", "MaLoai");
             modify.HienThiCombobox("SELECT MaNhaCungCap, TenNhaCungCap FROM NhaCungCap", cboNhaCungCap, "TenNhaCungCap", "MaNhaCungCap");
+        }
+
+        private void HienThiDGHangHoa(string query)
+        {
+            dgvHangHoa.DataSource = modify.DataTable(query);
+            dgvHangHoa.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
         }
 
         private void DieuChinhCacCotDG(DataGridView dgvHangHoa)
@@ -118,30 +122,17 @@ namespace QL_CuaHangVatTuNongNghiep
 
             }
             catch (Exception ex) { MessageBox.Show("Lỗi: " + ex.Message); }
-
         }
-
         private void layMaHangVaMaNCC(int _maHang, int _maNCC)
         {
             maHang = _maHang;
             maNCC = _maNCC;
         }
 
-        private void btnDatLai_Click(object sender, EventArgs e)
-        {
-            txtMaHangHoa.Text = "";
-            txtTenHangHoa.Text = "";
-            cboDVT.Text = "";
-            txtGiaNiemYet.Text = "";
-            cboTenLoaiHangHoa.Text = "";
-            cboNhaCungCap.Text = "";
-            ptbAnhHangHoa.Image = null;
-        }
-
         private void btnSuaThongTin_Click(object sender, EventArgs e)
         {
             string query1 = "UPDATE HangHoa SET TenHang = @tenhang, GiaNiemYet = @gianiemyet," +
-                "HinhAnh=@hinhanh, DVT = @dvt, MaLoai = @maloai WHERE MaHang = @mahang";
+               "HinhAnh=@hinhanh, DVT = @dvt, MaLoai = @maloai WHERE MaHang = @mahang";
             string query2 = "DELETE FROM CungCap WHERE MaHang = @mahang AND MaNhaCungCap = @manhacungcap";
             string query3 = "INSERT INTO CungCap(MaHang, MaNhaCungCap) VALUES (@mahang, @manhacungcap)";
             try
@@ -180,6 +171,17 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
+        private void btnDatLai_Click(object sender, EventArgs e)
+        {
+            txtMaHangHoa.Text = "";
+            txtTenHangHoa.Text = "";
+            cboDVT.Text = "";
+            txtGiaNiemYet.Text = "";
+            cboTenLoaiHangHoa.Text = "";
+            cboNhaCungCap.Text = "";
+            ptbAnhHangHoa.Image = null;
+        }
+
         private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -189,10 +191,8 @@ namespace QL_CuaHangVatTuNongNghiep
                     "FROM HangHoa h, LoaiHang l " +
                     "WHERE h.MaLoai = l.MaLoai " +
                     "AND TenHang LIKE N'%" + tuKhoa + "%'";
-                dgvHangHoa.DataSource = modify.DataTable(sqlSearch);
+                HienThiDGHangHoa(sqlSearch);
             }
         }
-
-
     }
 }

@@ -28,101 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            dgPhieuNhapHang = new DataGridView();
-            btnNhapHang = new Button();
-            btnRefresh = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgPhieuNhapHang).BeginInit();
-            SuspendLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgPhieuNhapHang = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnNhapHang = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgPhieuNhapHang)).BeginInit();
+            this.SuspendLayout();
             // 
             // dgPhieuNhapHang
             // 
-            dgPhieuNhapHang.AllowUserToAddRows = false;
-            dgPhieuNhapHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgPhieuNhapHang.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.Teal;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 10F);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = Color.Teal;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgPhieuNhapHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgPhieuNhapHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgPhieuNhapHang.EnableHeadersVisualStyles = false;
-            dgPhieuNhapHang.Location = new Point(38, 83);
-            dgPhieuNhapHang.Margin = new Padding(5);
-            dgPhieuNhapHang.Name = "dgPhieuNhapHang";
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.Teal;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 14F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgPhieuNhapHang.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgPhieuNhapHang.RowHeadersVisible = false;
-            dgPhieuNhapHang.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 10F);
-            dgPhieuNhapHang.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            dgPhieuNhapHang.RowTemplate.Height = 32;
-            dgPhieuNhapHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgPhieuNhapHang.Size = new Size(1541, 584);
-            dgPhieuNhapHang.TabIndex = 2;
-            dgPhieuNhapHang.CellContentClick += dgvNCC_CellContentClick;
+            this.dgPhieuNhapHang.AllowUserToAddRows = false;
+            this.dgPhieuNhapHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgPhieuNhapHang.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgPhieuNhapHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgPhieuNhapHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgPhieuNhapHang.EnableHeadersVisualStyles = false;
+            this.dgPhieuNhapHang.GridColor = System.Drawing.SystemColors.WindowFrame;
+            this.dgPhieuNhapHang.Location = new System.Drawing.Point(47, 43);
+            this.dgPhieuNhapHang.Name = "dgPhieuNhapHang";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgPhieuNhapHang.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgPhieuNhapHang.RowHeadersVisible = false;
+            this.dgPhieuNhapHang.RowHeadersWidth = 51;
+            this.dgPhieuNhapHang.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dgPhieuNhapHang.RowTemplate.Height = 24;
+            this.dgPhieuNhapHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgPhieuNhapHang.Size = new System.Drawing.Size(1195, 406);
+            this.dgPhieuNhapHang.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label1.Location = new System.Drawing.Point(42, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 28);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Tìm kiếm:";
             // 
             // btnNhapHang
             // 
-            btnNhapHang.BackColor = Color.Teal;
-            btnNhapHang.Cursor = Cursors.Hand;
-            btnNhapHang.Font = new Font("Segoe UI", 14F);
-            btnNhapHang.ForeColor = SystemColors.ButtonHighlight;
-            btnNhapHang.Location = new Point(592, 693);
-            btnNhapHang.Name = "btnNhapHang";
-            btnNhapHang.Size = new Size(178, 67);
-            btnNhapHang.TabIndex = 8;
-            btnNhapHang.Text = "Nhập hàng";
-            btnNhapHang.UseVisualStyleBackColor = false;
-            btnNhapHang.Click += btnNhapHang_Click;
+            this.btnNhapHang.BackColor = System.Drawing.Color.Teal;
+            this.btnNhapHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhapHang.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.btnNhapHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNhapHang.Location = new System.Drawing.Point(434, 475);
+            this.btnNhapHang.Name = "btnNhapHang";
+            this.btnNhapHang.Size = new System.Drawing.Size(216, 60);
+            this.btnNhapHang.TabIndex = 6;
+            this.btnNhapHang.Text = "Thêm phiếu nhập";
+            this.btnNhapHang.UseVisualStyleBackColor = false;
+            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(122, 10);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(374, 27);
+            this.txtTimKiem.TabIndex = 9;
             // 
             // btnRefresh
             // 
-            btnRefresh.BackColor = Color.Teal;
-            btnRefresh.Cursor = Cursors.Hand;
-            btnRefresh.Font = new Font("Segoe UI", 14F);
-            btnRefresh.ForeColor = SystemColors.ButtonHighlight;
-            btnRefresh.Location = new Point(808, 693);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(157, 67);
-            btnRefresh.TabIndex = 8;
-            btnRefresh.Text = "Refresh";
-            btnRefresh.UseVisualStyleBackColor = false;
-            btnRefresh.Click += btnRefresh_Click;
+            this.btnRefresh.BackColor = System.Drawing.Color.Teal;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.btnRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRefresh.Location = new System.Drawing.Point(666, 475);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(141, 60);
+            this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // FormNhapHang
             // 
-            AutoScaleDimensions = new SizeF(13F, 31F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1615, 916);
-            Controls.Add(btnRefresh);
-            Controls.Add(btnNhapHang);
-            Controls.Add(dgPhieuNhapHang);
-            Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(5);
-            Name = "FormNhapHang";
-            Text = "FormNhapHang";
-            Load += FormNhapHang_Load;
-            ((System.ComponentModel.ISupportInitialize)dgPhieuNhapHang).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1288, 624);
+            this.Controls.Add(this.dgPhieuNhapHang);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnNhapHang);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FormNhapHang";
+            this.Text = "FormNhapHang";
+            this.Load += new System.EventHandler(this.FormNhapHang_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgPhieuNhapHang)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private DataGridView dgPhieuNhapHang;
-        private Button btnNhapHang;
-        private Button btnRefresh;
+        private System.Windows.Forms.DataGridView dgPhieuNhapHang;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnNhapHang;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

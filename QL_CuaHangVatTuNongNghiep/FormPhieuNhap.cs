@@ -1,10 +1,10 @@
-﻿using ketnoi;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -79,7 +79,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void layDuLieuHangHoa()
         {
-            string[] thongtinLoaiHang = cboTenLoaiHangHoa.Text.Split(" - ");
+            string[] thongtinLoaiHang = cboTenLoaiHangHoa.Text.Split(new string[] { " - " }, StringSplitOptions.None);
             int maLoai = int.Parse(thongtinLoaiHang[0]);
             string tenLoai = thongtinLoaiHang[1];
             int maHangHoa = int.Parse(txtMaHangHoa.Text);
@@ -91,7 +91,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void layDuLieuNhaCungCap()
         {
-            string[] thongtinNhaCungCap = cboNhaCungCap.Text.Split(" - ");
+            string[] thongtinNhaCungCap = cboNhaCungCap.Text.Split(new string[] { " - " }, StringSplitOptions.None);
             int maNhaCungCap = int.Parse(thongtinNhaCungCap[0]);
             string tenNhaCungCap = thongtinNhaCungCap[1];
             nhaCungCap = new NhaCungCap(maNhaCungCap, tenNhaCungCap);
@@ -126,17 +126,6 @@ namespace QL_CuaHangVatTuNongNghiep
             txtMaHangHoa_PhieuNhap.Text = row.Cells[2].Value.ToString();
         }
 
-        private void btnLoadAnh_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Title = "Chọn ảnh";
-            openFileDialog.Filter = "Image Files(*.gif;*.jpg;*.jpeg;*.bmp;*.wmf;*.png)|*.gif;*.jpg;*.jpeg;*.bmp;*.wmf;*.png";
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                ptbAnhHangHoa.ImageLocation = openFileDialog.FileName;
-            }
-        }
-
         private bool ktraInputHangHoa()
         {
             if (String.IsNullOrEmpty(txtMaHangHoa.Text) || String.IsNullOrEmpty(txtTenHangHoa.Text) ||
@@ -151,20 +140,21 @@ namespace QL_CuaHangVatTuNongNghiep
             else return true;
         }
 
+        private void btnLoadAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Chọn ảnh";
+            openFileDialog.Filter = "Image Files(*.gif;*.jpg;*.jpeg;*.bmp;*.wmf;*.png)|*.gif;*.jpg;*.jpeg;*.bmp;*.wmf;*.png";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ptbAnhHangHoa.ImageLocation = openFileDialog.FileName;
+            }
+        }
+
         private void btnThemHangHoa_Click(object sender, EventArgs e)
         {
             btnDatLaiHangHoa_Click(sender, e);
             modify.LayMaMaxNapVaoTextBox("SELECT DISTINCT IDENT_CURRENT('HangHoa') + 1 FROM HangHoa;", txtMaHangHoa);
-        }
-
-        private void btnDatLaiHangHoa_Click(object sender, EventArgs e)
-        {
-            cboTenLoaiHangHoa.Text = "";
-            txtMaHangHoa.Text = "";
-            txtMaHangHoa.Enabled = true;
-            txtTenHangHoa.Text = "";
-            cboDVT.Text = "";
-            ptbAnhHangHoa.Image = null;
         }
 
         private void btnLuuHangHoa_Click(object sender, EventArgs e)
@@ -235,6 +225,16 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
+        private void btnDatLaiHangHoa_Click(object sender, EventArgs e)
+        {
+            cboTenLoaiHangHoa.Text = "";
+            txtMaHangHoa.Text = "";
+            txtMaHangHoa.Enabled = true;
+            txtTenHangHoa.Text = "";
+            cboDVT.Text = "";
+            ptbAnhHangHoa.Image = null;
+        }
+
         private void dgvPhieuNhap_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1) return;
@@ -251,7 +251,7 @@ namespace QL_CuaHangVatTuNongNghiep
         {
             txtSTTPhieuNhap.Text = "";
             cboNhaCungCap.Text = "";
-            txtMaHangHoa.Text = "";
+            txtMaHangHoa_PhieuNhap.Text = "";
             txtDonGiaNhap.Text = "";
             txtSoLuongNhap.Text = "";
         }
@@ -279,11 +279,15 @@ namespace QL_CuaHangVatTuNongNghiep
                     layDuLieuNhaCungCap();
                     modify.CommandThemPhieuNhap(query1, nhaCungCap, tempDN);
                     modify.CommandThemChiTietPhieuNhap(query2, int.Parse(txtSTTPhieuNhap.Text), hangHoa, int.Parse(txtSoLuongNhap.Text), float.Parse(txtDonGiaNhap.Text));
-                    modify.CommandNhaCungCap(hangHoa, nhaCungCap, query3);
+                    try
+                    {
+                        modify.CommandNhaCungCap(hangHoa, nhaCungCap, query3);
+                    }
+                    catch (SqlException ex) { }
                     MessageBox.Show("Thêm phiếu nhập mới thành công!");
                     HienThiDGPhieuNhap();
                 }
-                catch (Exception ex) { MessageBox.Show(ex.Message);}
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
             }
         }
     }

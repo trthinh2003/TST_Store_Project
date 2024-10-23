@@ -1,5 +1,4 @@
-﻿using ketnoi;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,13 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace QL_CuaHangVatTuNongNghiep
 {
     public partial class FormNhapHang : Form
     {
-
         Ham func = new Ham();
         SqlConnection conn = null;
         int tempDN;
@@ -36,10 +33,7 @@ namespace QL_CuaHangVatTuNongNghiep
                                  "AND p.MaNhaCungCap = ncc.MaNhaCungCap " +
                                  "AND nv.MaNV = p.MaNV", dgPhieuNhapHang);
             DoiTenCotDGNhaCungCap(dgPhieuNhapHang);
-        }
-        private void dgvNCC_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            conn.Close();
         }
 
         private void DoiTenCotDGNhaCungCap(DataGridView dg)
@@ -53,6 +47,7 @@ namespace QL_CuaHangVatTuNongNghiep
             dgPhieuNhapHang.Columns["SoLuongNhap"].HeaderText = "Số lượng nhập";
             dgPhieuNhapHang.Columns["DonGiaNhap"].HeaderText = "Đơn giá nhập";
             dgPhieuNhapHang.Columns["MaNhaCungCap"].HeaderText = "Mã nhà cung cấp";
+            dgPhieuNhapHang.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
         }
 
         private void btnNhapHang_Click(object sender, EventArgs e)

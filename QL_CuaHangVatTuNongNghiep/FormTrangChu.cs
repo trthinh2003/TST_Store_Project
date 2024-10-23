@@ -22,6 +22,7 @@ namespace QL_CuaHangVatTuNongNghiep
             InitializeComponent();
             tempDN = userID;
         }
+
         private void FormTrangChu_Load(object sender, EventArgs e)
         {
             try
@@ -32,26 +33,26 @@ namespace QL_CuaHangVatTuNongNghiep
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
+
         private void layTTNV()
         {
             string query = "SELECT TenNV, ChucVu FROM NhanVien WHERE MaNV = " + tempDN;
             modify.CommandLayTenNV(ref tenNhanVien, ref chucVu, query);
         }
 
-        private void lblLogout_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormDangNhap frmDangNhap = new FormDangNhap();
-            frmDangNhap.ShowDialog();
-        }
-
         private void ptbLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormDangNhap frmDangNhap = new FormDangNhap();
-            frmDangNhap.ShowDialog();
+            frmDangNhap.Show();
         }
 
+        private void lblLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap frmDangNhap = new FormDangNhap();
+            frmDangNhap.Show();
+        }
 
         private void moFormCon(Form formCon)
         {
@@ -75,6 +76,7 @@ namespace QL_CuaHangVatTuNongNghiep
             btnNhanVien.ForeColor = Color.White;
             btnKhachHang.ForeColor = Color.White;
             btnQLNhapHang.ForeColor = Color.White;
+            btnQLDonHang.ForeColor = Color.White;
         }
 
         private void ptbLogoStore_Click(object sender, EventArgs e)
@@ -98,7 +100,7 @@ namespace QL_CuaHangVatTuNongNghiep
             moFormCon(new FormHangHoa());
             resetMauCacButton();
             btnHangHoa.ForeColor = Color.OliveDrab;
-            lblFormName.Text = "Thông tin hàng hóa";
+            lblFormName.Text = "THÔNG TIN HÀNG HÓA";
         }
 
         private void btnNhaCungCap_Click(object sender, EventArgs e)
@@ -106,7 +108,7 @@ namespace QL_CuaHangVatTuNongNghiep
             moFormCon(new FormNhaCungCap());
             resetMauCacButton();
             btnNhaCungCap.ForeColor = Color.OliveDrab;
-            lblFormName.Text = "Thông tin nhà cung cấp";
+            lblFormName.Text = "THÔNG TIN NHÀ CUNG CẤP";
         }
 
         private void btnTaoDonHang_Click(object sender, EventArgs e)
@@ -114,7 +116,7 @@ namespace QL_CuaHangVatTuNongNghiep
             moFormCon(new FormDonHang(tempDN));
             resetMauCacButton();
             btnTaoDonHang.ForeColor = Color.OliveDrab;
-            lblFormName.Text = "Thông tin đơn hàng";
+            lblFormName.Text = "TẠO ĐƠN HÀNG";
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
@@ -122,7 +124,7 @@ namespace QL_CuaHangVatTuNongNghiep
             moFormCon(new FormNhanVien(tempDN));
             resetMauCacButton();
             btnNhanVien.ForeColor = Color.OliveDrab;
-            lblFormName.Text = "Thông tin nhân viên";
+            lblFormName.Text = "THÔNG TIN NHÂN VIÊN";
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -130,7 +132,7 @@ namespace QL_CuaHangVatTuNongNghiep
             moFormCon(new FormKhachHang());
             resetMauCacButton();
             btnKhachHang.ForeColor = Color.OliveDrab;
-            lblFormName.Text = "Thông tin khách hàng";
+            lblFormName.Text = "THÔNG TIN KHÁCH HÀNG";
         }
 
         private void btnQLNhapHang_Click(object sender, EventArgs e)
@@ -138,7 +140,15 @@ namespace QL_CuaHangVatTuNongNghiep
             moFormCon(new FormNhapHang(tempDN));
             resetMauCacButton();
             btnQLNhapHang.ForeColor = Color.OliveDrab;
-            lblFormName.Text = "Thông tin nhập hàng";
+            lblFormName.Text = "QUẢN LÝ NHẬP HÀNG";
+        }
+
+        private void btnDoanhThu_Click(object sender, EventArgs e)
+        {
+            moFormCon(new FormQLDonHang());
+            resetMauCacButton();
+            btnQLDonHang.ForeColor = Color.OliveDrab;
+            lblFormName.Text = "QUẢN LÝ ĐƠN HÀNG";
         }
     }
 }

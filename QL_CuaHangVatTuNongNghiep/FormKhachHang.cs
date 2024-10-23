@@ -1,5 +1,4 @@
-﻿using ketnoi;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,8 +23,14 @@ namespace QL_CuaHangVatTuNongNghiep
         private void FormKhachHang_Load(object sender, EventArgs e)
         {
             h.KetNoi(ref conn);
-            h.HienThiDg(conn, "SELECT MaKH, TenKH, SDTKH, EmailKH, DiaChiKH FROM KhachHang", dgvKhachHang);
+            HienThiDGKH();
             DoiTenCotDG(dgvKhachHang);
+        }
+
+        private void HienThiDGKH()
+        {
+            h.HienThiDg(conn, "SELECT MaKH, TenKH, SDTKH, EmailKH, DiaChiKH FROM KhachHang", dgvKhachHang);
+            dgvKhachHang.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
         }
 
         private void DoiTenCotDG(DataGridView dgvKhachHang)
@@ -60,7 +65,7 @@ namespace QL_CuaHangVatTuNongNghiep
         {
             try
             {
-                string makh_max = "SELECT IDENT_CURRENT('KhachHang') + 1 FROM KhachHang";
+                string makh_max = "SELECT IDENT_CURRENT('KhachHang') + 1";
                 SqlCommand command = new SqlCommand(makh_max, conn);
                 command.Connection = conn;
                 SqlDataReader reader = command.ExecuteReader();
@@ -198,5 +203,7 @@ namespace QL_CuaHangVatTuNongNghiep
                 }
             }
         }
+
+
     }
 }

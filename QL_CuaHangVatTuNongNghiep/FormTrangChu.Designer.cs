@@ -29,709 +29,739 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTrangChu));
-            pnLeft = new Panel();
-            pictureBox1 = new PictureBox();
-            btnQLNhapHang = new Button();
-            ptbBtnKhachHang = new PictureBox();
-            btnKhachHang = new Button();
-            ptbBtnNhanVien = new PictureBox();
-            btnNhanVien = new Button();
-            ptbBtnTaoDonHang = new PictureBox();
-            ptbBtnNhaCungCap = new PictureBox();
-            ptbBtnHangHoa = new PictureBox();
-            ptbBtnHome = new PictureBox();
-            btnTaoDonHang = new Button();
-            btnNhaCungCap = new Button();
-            btnHangHoa = new Button();
-            btnTrangChu = new Button();
-            ptbLogoStore = new PictureBox();
-            pnBody = new Panel();
-            groupBox2 = new GroupBox();
-            pictureBox14 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            lblFormName = new Label();
-            pnTop = new Panel();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            lblChucVu = new Label();
-            ptbLogout = new PictureBox();
-            lblLogout = new Label();
-            lblWelcome = new Label();
-            groupBox1 = new GroupBox();
-            panel4 = new Panel();
-            lblRevenue = new Label();
-            label9 = new Label();
-            pictureBox13 = new PictureBox();
-            panel3 = new Panel();
-            lblCountKhachHang = new Label();
-            label6 = new Label();
-            pictureBox10 = new PictureBox();
-            panel1 = new Panel();
-            lblCountNhanVien = new Label();
-            label2 = new Label();
-            pictureBox8 = new PictureBox();
-            panel2 = new Panel();
-            lblCountOrder = new Label();
-            pictureBox9 = new PictureBox();
-            label3 = new Label();
-            pnLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnKhachHang).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnNhanVien).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnTaoDonHang).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnNhaCungCap).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnHangHoa).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnHome).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbLogoStore).BeginInit();
-            pnBody.SuspendLayout();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            pnTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ptbLogout).BeginInit();
-            groupBox1.SuspendLayout();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            SuspendLayout();
+            this.pnLeft = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnQLNhapHang = new System.Windows.Forms.Button();
+            this.btnKhachHang = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnNhanVien = new System.Windows.Forms.Button();
+            this.btnTaoDonHang = new System.Windows.Forms.Button();
+            this.btnNhaCungCap = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnHangHoa = new System.Windows.Forms.Button();
+            this.ptbBtnHome = new System.Windows.Forms.PictureBox();
+            this.btnTrangChu = new System.Windows.Forms.Button();
+            this.ptbLogoStore = new System.Windows.Forms.PictureBox();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.lblLogout = new System.Windows.Forms.Label();
+            this.lblChucVu = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.ptbLogout = new System.Windows.Forms.PictureBox();
+            this.pnBody = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblRevenue = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblCountKhachHang = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblCountOrder = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCountNhanVien = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.lblFormName = new System.Windows.Forms.Label();
+            this.btnQLDonHang = new System.Windows.Forms.Button();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pnLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBtnHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogoStore)).BeginInit();
+            this.pnTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogout)).BeginInit();
+            this.pnBody.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.SuspendLayout();
             // 
             // pnLeft
             // 
-            pnLeft.BackColor = Color.LightSeaGreen;
-            pnLeft.Controls.Add(pictureBox1);
-            pnLeft.Controls.Add(btnQLNhapHang);
-            pnLeft.Controls.Add(ptbBtnKhachHang);
-            pnLeft.Controls.Add(btnKhachHang);
-            pnLeft.Controls.Add(ptbBtnNhanVien);
-            pnLeft.Controls.Add(btnNhanVien);
-            pnLeft.Controls.Add(ptbBtnTaoDonHang);
-            pnLeft.Controls.Add(ptbBtnNhaCungCap);
-            pnLeft.Controls.Add(ptbBtnHangHoa);
-            pnLeft.Controls.Add(ptbBtnHome);
-            pnLeft.Controls.Add(btnTaoDonHang);
-            pnLeft.Controls.Add(btnNhaCungCap);
-            pnLeft.Controls.Add(btnHangHoa);
-            pnLeft.Controls.Add(btnTrangChu);
-            pnLeft.Controls.Add(ptbLogoStore);
-            pnLeft.Dock = DockStyle.Left;
-            pnLeft.Location = new Point(0, 0);
-            pnLeft.Name = "pnLeft";
-            pnLeft.Size = new Size(291, 963);
-            pnLeft.TabIndex = 0;
+            this.pnLeft.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.pnLeft.Controls.Add(this.pictureBox15);
+            this.pnLeft.Controls.Add(this.btnQLDonHang);
+            this.pnLeft.Controls.Add(this.pictureBox14);
+            this.pnLeft.Controls.Add(this.pictureBox6);
+            this.pnLeft.Controls.Add(this.pictureBox5);
+            this.pnLeft.Controls.Add(this.btnQLNhapHang);
+            this.pnLeft.Controls.Add(this.btnKhachHang);
+            this.pnLeft.Controls.Add(this.pictureBox4);
+            this.pnLeft.Controls.Add(this.pictureBox3);
+            this.pnLeft.Controls.Add(this.pictureBox2);
+            this.pnLeft.Controls.Add(this.btnNhanVien);
+            this.pnLeft.Controls.Add(this.btnTaoDonHang);
+            this.pnLeft.Controls.Add(this.btnNhaCungCap);
+            this.pnLeft.Controls.Add(this.pictureBox1);
+            this.pnLeft.Controls.Add(this.btnHangHoa);
+            this.pnLeft.Controls.Add(this.ptbBtnHome);
+            this.pnLeft.Controls.Add(this.btnTrangChu);
+            this.pnLeft.Controls.Add(this.ptbLogoStore);
+            this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnLeft.Name = "pnLeft";
+            this.pnLeft.Size = new System.Drawing.Size(243, 803);
+            this.pnLeft.TabIndex = 0;
             // 
-            // pictureBox1
+            // pictureBox6
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(12, 556);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(65, 46);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 15;
-            pictureBox1.TabStop = false;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(12, 550);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 12;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(12, 492);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
             // 
             // btnQLNhapHang
             // 
-            btnQLNhapHang.BackColor = Color.LightSeaGreen;
-            btnQLNhapHang.Cursor = Cursors.Hand;
-            btnQLNhapHang.Dock = DockStyle.Top;
-            btnQLNhapHang.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnQLNhapHang.ForeColor = Color.White;
-            btnQLNhapHang.Location = new Point(0, 550);
-            btnQLNhapHang.Name = "btnQLNhapHang";
-            btnQLNhapHang.Size = new Size(291, 58);
-            btnQLNhapHang.TabIndex = 14;
-            btnQLNhapHang.Text = "       QL Nhập hàng";
-            btnQLNhapHang.UseVisualStyleBackColor = false;
-            btnQLNhapHang.Click += btnQLNhapHang_Click;
-            // 
-            // ptbBtnKhachHang
-            // 
-            ptbBtnKhachHang.Image = (Image)resources.GetObject("ptbBtnKhachHang.Image");
-            ptbBtnKhachHang.InitialImage = null;
-            ptbBtnKhachHang.Location = new Point(12, 498);
-            ptbBtnKhachHang.Name = "ptbBtnKhachHang";
-            ptbBtnKhachHang.Size = new Size(65, 46);
-            ptbBtnKhachHang.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbBtnKhachHang.TabIndex = 11;
-            ptbBtnKhachHang.TabStop = false;
+            this.btnQLNhapHang.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnQLNhapHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQLNhapHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLNhapHang.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnQLNhapHang.ForeColor = System.Drawing.Color.White;
+            this.btnQLNhapHang.Location = new System.Drawing.Point(0, 544);
+            this.btnQLNhapHang.Name = "btnQLNhapHang";
+            this.btnQLNhapHang.Size = new System.Drawing.Size(243, 58);
+            this.btnQLNhapHang.TabIndex = 11;
+            this.btnQLNhapHang.Text = "       QL Nhập hàng";
+            this.btnQLNhapHang.UseVisualStyleBackColor = false;
+            this.btnQLNhapHang.Click += new System.EventHandler(this.btnQLNhapHang_Click);
             // 
             // btnKhachHang
             // 
-            btnKhachHang.BackColor = Color.LightSeaGreen;
-            btnKhachHang.Cursor = Cursors.Hand;
-            btnKhachHang.Dock = DockStyle.Top;
-            btnKhachHang.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnKhachHang.ForeColor = Color.White;
-            btnKhachHang.Location = new Point(0, 492);
-            btnKhachHang.Name = "btnKhachHang";
-            btnKhachHang.Size = new Size(291, 58);
-            btnKhachHang.TabIndex = 10;
-            btnKhachHang.Text = "   Khách hàng";
-            btnKhachHang.UseVisualStyleBackColor = false;
-            btnKhachHang.Click += btnKhachHang_Click;
+            this.btnKhachHang.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 486);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(243, 58);
+            this.btnKhachHang.TabIndex = 10;
+            this.btnKhachHang.Text = "   Khách hàng";
+            this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
-            // ptbBtnNhanVien
+            // pictureBox4
             // 
-            ptbBtnNhanVien.Image = (Image)resources.GetObject("ptbBtnNhanVien.Image");
-            ptbBtnNhanVien.InitialImage = null;
-            ptbBtnNhanVien.Location = new Point(12, 440);
-            ptbBtnNhanVien.Name = "ptbBtnNhanVien";
-            ptbBtnNhanVien.Size = new Size(65, 46);
-            ptbBtnNhanVien.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbBtnNhanVien.TabIndex = 9;
-            ptbBtnNhanVien.TabStop = false;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(12, 434);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 376);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 318);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // btnNhanVien
             // 
-            btnNhanVien.BackColor = Color.LightSeaGreen;
-            btnNhanVien.Cursor = Cursors.Hand;
-            btnNhanVien.Dock = DockStyle.Top;
-            btnNhanVien.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnNhanVien.ForeColor = Color.White;
-            btnNhanVien.Location = new Point(0, 434);
-            btnNhanVien.Name = "btnNhanVien";
-            btnNhanVien.Size = new Size(291, 58);
-            btnNhanVien.TabIndex = 8;
-            btnNhanVien.Text = " Nhân viên";
-            btnNhanVien.UseVisualStyleBackColor = false;
-            btnNhanVien.Click += btnNhanVien_Click;
-            // 
-            // ptbBtnTaoDonHang
-            // 
-            ptbBtnTaoDonHang.Image = (Image)resources.GetObject("ptbBtnTaoDonHang.Image");
-            ptbBtnTaoDonHang.Location = new Point(12, 382);
-            ptbBtnTaoDonHang.Name = "ptbBtnTaoDonHang";
-            ptbBtnTaoDonHang.Size = new Size(65, 46);
-            ptbBtnTaoDonHang.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbBtnTaoDonHang.TabIndex = 7;
-            ptbBtnTaoDonHang.TabStop = false;
-            // 
-            // ptbBtnNhaCungCap
-            // 
-            ptbBtnNhaCungCap.Image = (Image)resources.GetObject("ptbBtnNhaCungCap.Image");
-            ptbBtnNhaCungCap.Location = new Point(12, 324);
-            ptbBtnNhaCungCap.Name = "ptbBtnNhaCungCap";
-            ptbBtnNhaCungCap.Size = new Size(65, 46);
-            ptbBtnNhaCungCap.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbBtnNhaCungCap.TabIndex = 6;
-            ptbBtnNhaCungCap.TabStop = false;
-            // 
-            // ptbBtnHangHoa
-            // 
-            ptbBtnHangHoa.Image = (Image)resources.GetObject("ptbBtnHangHoa.Image");
-            ptbBtnHangHoa.Location = new Point(12, 266);
-            ptbBtnHangHoa.Name = "ptbBtnHangHoa";
-            ptbBtnHangHoa.Size = new Size(65, 46);
-            ptbBtnHangHoa.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbBtnHangHoa.TabIndex = 5;
-            ptbBtnHangHoa.TabStop = false;
-            // 
-            // ptbBtnHome
-            // 
-            ptbBtnHome.Image = (Image)resources.GetObject("ptbBtnHome.Image");
-            ptbBtnHome.Location = new Point(12, 208);
-            ptbBtnHome.Name = "ptbBtnHome";
-            ptbBtnHome.Size = new Size(65, 46);
-            ptbBtnHome.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbBtnHome.TabIndex = 0;
-            ptbBtnHome.TabStop = false;
+            this.btnNhanVien.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnNhanVien.Location = new System.Drawing.Point(0, 428);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(243, 58);
+            this.btnNhanVien.TabIndex = 8;
+            this.btnNhanVien.Text = " Nhân viên";
+            this.btnNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // btnTaoDonHang
             // 
-            btnTaoDonHang.BackColor = Color.LightSeaGreen;
-            btnTaoDonHang.Cursor = Cursors.Hand;
-            btnTaoDonHang.Dock = DockStyle.Top;
-            btnTaoDonHang.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnTaoDonHang.ForeColor = Color.White;
-            btnTaoDonHang.Location = new Point(0, 376);
-            btnTaoDonHang.Name = "btnTaoDonHang";
-            btnTaoDonHang.Size = new Size(291, 58);
-            btnTaoDonHang.TabIndex = 4;
-            btnTaoDonHang.Text = "       Tạo đơn hàng";
-            btnTaoDonHang.UseVisualStyleBackColor = false;
-            btnTaoDonHang.Click += btnTaoDonHang_Click;
+            this.btnTaoDonHang.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnTaoDonHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTaoDonHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTaoDonHang.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnTaoDonHang.ForeColor = System.Drawing.Color.White;
+            this.btnTaoDonHang.Location = new System.Drawing.Point(0, 370);
+            this.btnTaoDonHang.Name = "btnTaoDonHang";
+            this.btnTaoDonHang.Size = new System.Drawing.Size(243, 58);
+            this.btnTaoDonHang.TabIndex = 7;
+            this.btnTaoDonHang.Text = "       Tạo đơn hàng";
+            this.btnTaoDonHang.UseVisualStyleBackColor = false;
+            this.btnTaoDonHang.Click += new System.EventHandler(this.btnTaoDonHang_Click);
             // 
             // btnNhaCungCap
             // 
-            btnNhaCungCap.BackColor = Color.LightSeaGreen;
-            btnNhaCungCap.Cursor = Cursors.Hand;
-            btnNhaCungCap.Dock = DockStyle.Top;
-            btnNhaCungCap.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnNhaCungCap.ForeColor = Color.White;
-            btnNhaCungCap.Location = new Point(0, 318);
-            btnNhaCungCap.Name = "btnNhaCungCap";
-            btnNhaCungCap.Size = new Size(291, 58);
-            btnNhaCungCap.TabIndex = 3;
-            btnNhaCungCap.Text = "       Nhà cung cấp";
-            btnNhaCungCap.UseVisualStyleBackColor = false;
-            btnNhaCungCap.Click += btnNhaCungCap_Click;
+            this.btnNhaCungCap.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnNhaCungCap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhaCungCap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNhaCungCap.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnNhaCungCap.ForeColor = System.Drawing.Color.White;
+            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 312);
+            this.btnNhaCungCap.Name = "btnNhaCungCap";
+            this.btnNhaCungCap.Size = new System.Drawing.Size(243, 58);
+            this.btnNhaCungCap.TabIndex = 6;
+            this.btnNhaCungCap.Text = "       Nhà cung cấp";
+            this.btnNhaCungCap.UseVisualStyleBackColor = false;
+            this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 260);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // btnHangHoa
             // 
-            btnHangHoa.BackColor = Color.LightSeaGreen;
-            btnHangHoa.Cursor = Cursors.Hand;
-            btnHangHoa.Dock = DockStyle.Top;
-            btnHangHoa.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnHangHoa.ForeColor = Color.White;
-            btnHangHoa.Location = new Point(0, 260);
-            btnHangHoa.Name = "btnHangHoa";
-            btnHangHoa.Size = new Size(291, 58);
-            btnHangHoa.TabIndex = 2;
-            btnHangHoa.Text = "Hàng hóa";
-            btnHangHoa.UseVisualStyleBackColor = false;
-            btnHangHoa.Click += btnHangHoa_Click;
+            this.btnHangHoa.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnHangHoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHangHoa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHangHoa.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnHangHoa.ForeColor = System.Drawing.Color.White;
+            this.btnHangHoa.Location = new System.Drawing.Point(0, 254);
+            this.btnHangHoa.Name = "btnHangHoa";
+            this.btnHangHoa.Size = new System.Drawing.Size(243, 58);
+            this.btnHangHoa.TabIndex = 4;
+            this.btnHangHoa.Text = "Hàng hóa";
+            this.btnHangHoa.UseVisualStyleBackColor = false;
+            this.btnHangHoa.Click += new System.EventHandler(this.btnHangHoa_Click);
+            // 
+            // ptbBtnHome
+            // 
+            this.ptbBtnHome.Image = ((System.Drawing.Image)(resources.GetObject("ptbBtnHome.Image")));
+            this.ptbBtnHome.Location = new System.Drawing.Point(12, 202);
+            this.ptbBtnHome.Name = "ptbBtnHome";
+            this.ptbBtnHome.Size = new System.Drawing.Size(56, 46);
+            this.ptbBtnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbBtnHome.TabIndex = 3;
+            this.ptbBtnHome.TabStop = false;
             // 
             // btnTrangChu
             // 
-            btnTrangChu.BackColor = Color.LightSeaGreen;
-            btnTrangChu.Cursor = Cursors.Hand;
-            btnTrangChu.Dock = DockStyle.Top;
-            btnTrangChu.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnTrangChu.ForeColor = Color.OliveDrab;
-            btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(0, 202);
-            btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(291, 58);
-            btnTrangChu.TabIndex = 1;
-            btnTrangChu.Text = "Trang chủ";
-            btnTrangChu.UseVisualStyleBackColor = false;
-            btnTrangChu.Click += btnTrangChu_Click;
+            this.btnTrangChu.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnTrangChu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTrangChu.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnTrangChu.ForeColor = System.Drawing.Color.OliveDrab;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 196);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(243, 58);
+            this.btnTrangChu.TabIndex = 2;
+            this.btnTrangChu.Text = "Trang chủ";
+            this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // ptbLogoStore
             // 
-            ptbLogoStore.Cursor = Cursors.Hand;
-            ptbLogoStore.Dock = DockStyle.Top;
-            ptbLogoStore.Image = (Image)resources.GetObject("ptbLogoStore.Image");
-            ptbLogoStore.InitialImage = null;
-            ptbLogoStore.Location = new Point(0, 0);
-            ptbLogoStore.Name = "ptbLogoStore";
-            ptbLogoStore.Size = new Size(291, 202);
-            ptbLogoStore.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbLogoStore.TabIndex = 0;
-            ptbLogoStore.TabStop = false;
-            ptbLogoStore.Click += ptbLogoStore_Click;
-            // 
-            // pnBody
-            // 
-            pnBody.BackColor = Color.White;
-            pnBody.Controls.Add(groupBox2);
-            pnBody.Controls.Add(lblFormName);
-            pnBody.Controls.Add(pnTop);
-            pnBody.Controls.Add(groupBox1);
-            pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(291, 0);
-            pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1633, 963);
-            pnBody.TabIndex = 2;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(pictureBox14);
-            groupBox2.Controls.Add(pictureBox12);
-            groupBox2.Controls.Add(pictureBox11);
-            groupBox2.Font = new Font("Segoe UI", 12F);
-            groupBox2.Location = new Point(27, 498);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1580, 435);
-            groupBox2.TabIndex = 6;
-            groupBox2.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(604, 33);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(428, 337);
-            pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox14.TabIndex = 2;
-            pictureBox14.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(1067, 33);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(428, 337);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 1;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(113, 33);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(457, 337);
-            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox11.TabIndex = 0;
-            pictureBox11.TabStop = false;
-            // 
-            // lblFormName
-            // 
-            lblFormName.Dock = DockStyle.Top;
-            lblFormName.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            lblFormName.Location = new Point(0, 125);
-            lblFormName.Name = "lblFormName";
-            lblFormName.Size = new Size(1633, 77);
-            lblFormName.TabIndex = 1;
-            lblFormName.Text = "QUẢN LÝ CỬA HÀNG VẬT TƯ NÔNG NGHIỆP";
-            lblFormName.TextAlign = ContentAlignment.MiddleCenter;
+            this.ptbLogoStore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbLogoStore.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ptbLogoStore.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogoStore.Image")));
+            this.ptbLogoStore.Location = new System.Drawing.Point(0, 0);
+            this.ptbLogoStore.Name = "ptbLogoStore";
+            this.ptbLogoStore.Size = new System.Drawing.Size(243, 196);
+            this.ptbLogoStore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbLogoStore.TabIndex = 0;
+            this.ptbLogoStore.TabStop = false;
+            this.ptbLogoStore.Click += new System.EventHandler(this.ptbLogoStore_Click);
             // 
             // pnTop
             // 
-            pnTop.BackColor = Color.LightSeaGreen;
-            pnTop.Controls.Add(flowLayoutPanel1);
-            pnTop.Controls.Add(lblChucVu);
-            pnTop.Controls.Add(ptbLogout);
-            pnTop.Controls.Add(lblLogout);
-            pnTop.Controls.Add(lblWelcome);
-            pnTop.Dock = DockStyle.Top;
-            pnTop.Location = new Point(0, 0);
-            pnTop.Name = "pnTop";
-            pnTop.Size = new Size(1633, 125);
-            pnTop.TabIndex = 0;
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Location = new Point(607, 120);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(250, 125);
-            flowLayoutPanel1.TabIndex = 4;
-            // 
-            // lblChucVu
-            // 
-            lblChucVu.AutoSize = true;
-            lblChucVu.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblChucVu.ForeColor = Color.White;
-            lblChucVu.Location = new Point(645, 55);
-            lblChucVu.Name = "lblChucVu";
-            lblChucVu.Size = new Size(99, 28);
-            lblChucVu.TabIndex = 3;
-            lblChucVu.Text = "Chức vụ: ";
-            // 
-            // ptbLogout
-            // 
-            ptbLogout.Cursor = Cursors.Hand;
-            ptbLogout.Image = (Image)resources.GetObject("ptbLogout.Image");
-            ptbLogout.Location = new Point(1441, 51);
-            ptbLogout.Name = "ptbLogout";
-            ptbLogout.Size = new Size(49, 32);
-            ptbLogout.SizeMode = PictureBoxSizeMode.Zoom;
-            ptbLogout.TabIndex = 2;
-            ptbLogout.TabStop = false;
-            ptbLogout.Click += ptbLogout_Click;
+            this.pnTop.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.pnTop.Controls.Add(this.lblLogout);
+            this.pnTop.Controls.Add(this.lblChucVu);
+            this.pnTop.Controls.Add(this.lblWelcome);
+            this.pnTop.Controls.Add(this.ptbLogout);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(243, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(1306, 125);
+            this.pnTop.TabIndex = 1;
             // 
             // lblLogout
             // 
-            lblLogout.AutoSize = true;
-            lblLogout.Cursor = Cursors.Hand;
-            lblLogout.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            lblLogout.ForeColor = Color.White;
-            lblLogout.Location = new Point(1487, 51);
-            lblLogout.Name = "lblLogout";
-            lblLogout.Size = new Size(120, 30);
-            lblLogout.TabIndex = 1;
-            lblLogout.Text = "Đăng xuất";
-            lblLogout.Click += lblLogout_Click;
+            this.lblLogout.AutoSize = true;
+            this.lblLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblLogout.ForeColor = System.Drawing.Color.White;
+            this.lblLogout.Location = new System.Drawing.Point(1178, 55);
+            this.lblLogout.Name = "lblLogout";
+            this.lblLogout.Size = new System.Drawing.Size(110, 28);
+            this.lblLogout.TabIndex = 0;
+            this.lblLogout.Text = "Đăng xuất";
+            this.lblLogout.Click += new System.EventHandler(this.lblLogout_Click);
+            // 
+            // lblChucVu
+            // 
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblChucVu.ForeColor = System.Drawing.Color.White;
+            this.lblChucVu.Location = new System.Drawing.Point(564, 55);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(94, 25);
+            this.lblChucVu.TabIndex = 0;
+            this.lblChucVu.Text = "Chức vụ: ";
             // 
             // lblWelcome
             // 
-            lblWelcome.AutoSize = true;
-            lblWelcome.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            lblWelcome.ForeColor = Color.White;
-            lblWelcome.Location = new Point(27, 51);
-            lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(131, 30);
-            lblWelcome.TabIndex = 0;
-            lblWelcome.Text = "Xin chào, ...";
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblWelcome.ForeColor = System.Drawing.Color.White;
+            this.lblWelcome.Location = new System.Drawing.Point(27, 51);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(120, 28);
+            this.lblWelcome.TabIndex = 0;
+            this.lblWelcome.Text = "Xin chào, ...";
             // 
-            // groupBox1
+            // ptbLogout
             // 
-            groupBox1.Controls.Add(panel4);
-            groupBox1.Controls.Add(panel3);
-            groupBox1.Controls.Add(panel1);
-            groupBox1.Controls.Add(panel2);
-            groupBox1.Font = new Font("Segoe UI", 12F);
-            groupBox1.Location = new Point(27, 208);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1580, 278);
-            groupBox1.TabIndex = 5;
-            groupBox1.TabStop = false;
+            this.ptbLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbLogout.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogout.Image")));
+            this.ptbLogout.Location = new System.Drawing.Point(1145, 51);
+            this.ptbLogout.Name = "ptbLogout";
+            this.ptbLogout.Size = new System.Drawing.Size(40, 32);
+            this.ptbLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbLogout.TabIndex = 3;
+            this.ptbLogout.TabStop = false;
+            this.ptbLogout.Click += new System.EventHandler(this.ptbLogout_Click);
             // 
-            // panel4
+            // pnBody
             // 
-            panel4.BackColor = Color.Teal;
-            panel4.Controls.Add(lblRevenue);
-            panel4.Controls.Add(label9);
-            panel4.Controls.Add(pictureBox13);
-            panel4.Location = new Point(1182, 52);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(313, 194);
-            panel4.TabIndex = 5;
+            this.pnBody.Controls.Add(this.groupBox2);
+            this.pnBody.Controls.Add(this.groupBox1);
+            this.pnBody.Controls.Add(this.lblFormName);
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBody.Location = new System.Drawing.Point(243, 125);
+            this.pnBody.Name = "pnBody";
+            this.pnBody.Size = new System.Drawing.Size(1306, 678);
+            this.pnBody.TabIndex = 2;
             // 
-            // lblRevenue
+            // groupBox2
             // 
-            lblRevenue.AutoSize = true;
-            lblRevenue.Font = new Font("Segoe UI", 28F);
-            lblRevenue.ForeColor = Color.White;
-            lblRevenue.Location = new Point(104, 72);
-            lblRevenue.Name = "lblRevenue";
-            lblRevenue.Size = new Size(52, 62);
-            lblRevenue.TabIndex = 15;
-            lblRevenue.Text = "0";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(104, 42);
-            label9.Name = "label9";
-            label9.Size = new Size(143, 23);
-            label9.TabIndex = 14;
-            label9.Text = "Tổng doanh thu:";
+            this.groupBox2.Controls.Add(this.pictureBox13);
+            this.groupBox2.Controls.Add(this.pictureBox12);
+            this.groupBox2.Controls.Add(this.pictureBox11);
+            this.groupBox2.Location = new System.Drawing.Point(17, 315);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1250, 298);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
             // 
             // pictureBox13
             // 
-            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.InitialImage = null;
-            pictureBox13.Location = new Point(13, 42);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(85, 92);
-            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox13.TabIndex = 13;
-            pictureBox13.TabStop = false;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(905, 26);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(301, 247);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 0;
+            this.pictureBox13.TabStop = false;
             // 
-            // panel3
+            // pictureBox12
             // 
-            panel3.BackColor = Color.Teal;
-            panel3.Controls.Add(lblCountKhachHang);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(pictureBox10);
-            panel3.Location = new Point(828, 52);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(313, 194);
-            panel3.TabIndex = 4;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(492, 26);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(301, 247);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.TabStop = false;
             // 
-            // lblCountKhachHang
+            // pictureBox11
             // 
-            lblCountKhachHang.AutoSize = true;
-            lblCountKhachHang.Font = new Font("Segoe UI", 28F);
-            lblCountKhachHang.ForeColor = Color.White;
-            lblCountKhachHang.Location = new Point(104, 72);
-            lblCountKhachHang.Name = "lblCountKhachHang";
-            lblCountKhachHang.Size = new Size(52, 62);
-            lblCountKhachHang.TabIndex = 15;
-            lblCountKhachHang.Text = "0";
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(59, 26);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(301, 247);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 0;
+            this.pictureBox11.TabStop = false;
             // 
-            // label6
+            // groupBox1
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(104, 42);
-            label6.Name = "label6";
-            label6.Size = new Size(185, 23);
-            label6.TabIndex = 14;
-            label6.Text = "Số lượng khách hàng:";
+            this.groupBox1.Controls.Add(this.panel4);
+            this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Location = new System.Drawing.Point(17, 80);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1250, 223);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Teal;
+            this.panel4.Controls.Add(this.lblRevenue);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.pictureBox10);
+            this.panel4.Location = new System.Drawing.Point(953, 41);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(253, 153);
+            this.panel4.TabIndex = 0;
+            // 
+            // lblRevenue
+            // 
+            this.lblRevenue.AutoSize = true;
+            this.lblRevenue.Font = new System.Drawing.Font("Segoe UI", 23F);
+            this.lblRevenue.ForeColor = System.Drawing.Color.White;
+            this.lblRevenue.Location = new System.Drawing.Point(97, 64);
+            this.lblRevenue.Name = "lblRevenue";
+            this.lblRevenue.Size = new System.Drawing.Size(43, 52);
+            this.lblRevenue.TabIndex = 1;
+            this.lblRevenue.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(97, 42);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(168, 28);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Tổng doanh thu:";
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.InitialImage = null;
-            pictureBox10.Location = new Point(13, 42);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(85, 92);
-            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox10.TabIndex = 13;
-            pictureBox10.TabStop = false;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(22, 42);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(69, 74);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
             // 
-            // panel1
+            // panel3
             // 
-            panel1.BackColor = Color.Teal;
-            panel1.Controls.Add(lblCountNhanVien);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox8);
-            panel1.Location = new Point(113, 52);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(313, 194);
-            panel1.TabIndex = 2;
+            this.panel3.BackColor = System.Drawing.Color.Teal;
+            this.panel3.Controls.Add(this.lblCountKhachHang);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.pictureBox9);
+            this.panel3.Location = new System.Drawing.Point(643, 41);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 153);
+            this.panel3.TabIndex = 0;
             // 
-            // lblCountNhanVien
+            // lblCountKhachHang
             // 
-            lblCountNhanVien.AutoSize = true;
-            lblCountNhanVien.Font = new Font("Segoe UI", 28F);
-            lblCountNhanVien.ForeColor = Color.White;
-            lblCountNhanVien.Location = new Point(112, 72);
-            lblCountNhanVien.Name = "lblCountNhanVien";
-            lblCountNhanVien.Size = new Size(52, 62);
-            lblCountNhanVien.TabIndex = 12;
-            lblCountNhanVien.Text = "0";
+            this.lblCountKhachHang.AutoSize = true;
+            this.lblCountKhachHang.Font = new System.Drawing.Font("Segoe UI", 23F);
+            this.lblCountKhachHang.ForeColor = System.Drawing.Color.White;
+            this.lblCountKhachHang.Location = new System.Drawing.Point(94, 64);
+            this.lblCountKhachHang.Name = "lblCountKhachHang";
+            this.lblCountKhachHang.Size = new System.Drawing.Size(43, 52);
+            this.lblCountKhachHang.TabIndex = 1;
+            this.lblCountKhachHang.Text = "0";
             // 
-            // label2
+            // label6
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(112, 42);
-            label2.Name = "label2";
-            label2.Size = new Size(170, 23);
-            label2.TabIndex = 11;
-            label2.Text = "Số lượng nhân viên:";
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.InitialImage = null;
-            pictureBox8.Location = new Point(22, 42);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(84, 92);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 10;
-            pictureBox8.TabStop = false;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Teal;
-            panel2.Controls.Add(lblCountOrder);
-            panel2.Controls.Add(pictureBox9);
-            panel2.Controls.Add(label3);
-            panel2.Location = new Point(472, 52);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(313, 194);
-            panel2.TabIndex = 3;
-            // 
-            // lblCountOrder
-            // 
-            lblCountOrder.AutoSize = true;
-            lblCountOrder.Font = new Font("Segoe UI", 28F);
-            lblCountOrder.ForeColor = Color.White;
-            lblCountOrder.Location = new Point(108, 72);
-            lblCountOrder.Name = "lblCountOrder";
-            lblCountOrder.Size = new Size(52, 62);
-            lblCountOrder.TabIndex = 13;
-            lblCountOrder.Text = "0";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(97, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(217, 28);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Số lượng khách hàng:";
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.InitialImage = null;
-            pictureBox9.Location = new Point(13, 42);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(85, 92);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 12;
-            pictureBox9.TabStop = false;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(22, 42);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(69, 74);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
             // 
-            // label3
+            // panel2
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(104, 42);
-            label3.Name = "label3";
-            label3.Size = new Size(170, 23);
-            label3.TabIndex = 12;
-            label3.Text = "Số lượng đơn hàng:";
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.lblCountOrder);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.pictureBox8);
+            this.panel2.Location = new System.Drawing.Point(351, 41);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(267, 153);
+            this.panel2.TabIndex = 0;
+            // 
+            // lblCountOrder
+            // 
+            this.lblCountOrder.AutoSize = true;
+            this.lblCountOrder.Font = new System.Drawing.Font("Segoe UI", 23F);
+            this.lblCountOrder.ForeColor = System.Drawing.Color.White;
+            this.lblCountOrder.Location = new System.Drawing.Point(97, 64);
+            this.lblCountOrder.Name = "lblCountOrder";
+            this.lblCountOrder.Size = new System.Drawing.Size(43, 52);
+            this.lblCountOrder.TabIndex = 1;
+            this.lblCountOrder.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(97, 42);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(199, 28);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Số lượng đơn hàng:";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(22, 42);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(69, 74);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.lblCountNhanVien);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Location = new System.Drawing.Point(59, 41);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(269, 153);
+            this.panel1.TabIndex = 0;
+            // 
+            // lblCountNhanVien
+            // 
+            this.lblCountNhanVien.AutoSize = true;
+            this.lblCountNhanVien.Font = new System.Drawing.Font("Segoe UI", 23F);
+            this.lblCountNhanVien.ForeColor = System.Drawing.Color.White;
+            this.lblCountNhanVien.Location = new System.Drawing.Point(97, 66);
+            this.lblCountNhanVien.Name = "lblCountNhanVien";
+            this.lblCountNhanVien.Size = new System.Drawing.Size(43, 52);
+            this.lblCountNhanVien.TabIndex = 1;
+            this.lblCountNhanVien.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(101, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(201, 28);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Số lượng nhân viên:";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(22, 42);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(69, 74);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
+            // lblFormName
+            // 
+            this.lblFormName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblFormName.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.lblFormName.Location = new System.Drawing.Point(0, 0);
+            this.lblFormName.Name = "lblFormName";
+            this.lblFormName.Size = new System.Drawing.Size(1306, 68);
+            this.lblFormName.TabIndex = 0;
+            this.lblFormName.Text = "QUẢN LÝ CỬA HÀNG VẬT TƯ NÔNG NGHIỆP";
+            this.lblFormName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnQLDonHang
+            // 
+            this.btnQLDonHang.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnQLDonHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQLDonHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLDonHang.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnQLDonHang.ForeColor = System.Drawing.Color.White;
+            this.btnQLDonHang.Location = new System.Drawing.Point(0, 602);
+            this.btnQLDonHang.Name = "btnQLDonHang";
+            this.btnQLDonHang.Size = new System.Drawing.Size(243, 58);
+            this.btnQLDonHang.TabIndex = 13;
+            this.btnQLDonHang.Text = "     QL Đơn hàng";
+            this.btnQLDonHang.UseVisualStyleBackColor = false;
+            this.btnQLDonHang.Click += new System.EventHandler(this.btnDoanhThu_Click);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(12, 608);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 12;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(12, 608);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(56, 46);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 14;
+            this.pictureBox15.TabStop = false;
             // 
             // FormTrangChu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1924, 963);
-            Controls.Add(pnBody);
-            Controls.Add(pnLeft);
-            Name = "FormTrangChu";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Quản Lý Cửa Hàng Vật Tư Nông Nghiệp";
-            WindowState = FormWindowState.Maximized;
-            Load += FormTrangChu_Load;
-            pnLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnKhachHang).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnNhanVien).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnTaoDonHang).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnNhaCungCap).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnHangHoa).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbBtnHome).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbLogoStore).EndInit();
-            pnBody.ResumeLayout(false);
-            groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            pnTop.ResumeLayout(false);
-            pnTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)ptbLogout).EndInit();
-            groupBox1.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1549, 803);
+            this.Controls.Add(this.pnBody);
+            this.Controls.Add(this.pnTop);
+            this.Controls.Add(this.pnLeft);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FormTrangChu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Cửa Hàng Vật Tư Nông Nghiệp";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormTrangChu_Load);
+            this.pnLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBtnHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogoStore)).EndInit();
+            this.pnTop.ResumeLayout(false);
+            this.pnTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogout)).EndInit();
+            this.pnBody.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private Panel pnLeft;
-        private Panel pnBody;
-        private PictureBox ptbLogoStore;
-        private Button btnTrangChu;
-        private Button btnTaoDonHang;
-        private Button btnNhaCungCap;
-        private Button btnHangHoa;
-        private PictureBox ptbBtnHome;
-        private PictureBox ptbBtnTaoDonHang;
-        private PictureBox ptbBtnNhaCungCap;
-        private PictureBox ptbBtnHangHoa;
-        private PictureBox ptbBtnNhanVien;
-        private Button btnNhanVien;
-        private Panel pnTop;
-        private Label lblWelcome;
-        private Label lblLogout;
-        private PictureBox ptbLogout;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Label lblChucVu;
-        private Button btnKhachHang;
-        private PictureBox ptbBtnKhachHang;
-        private Label lblFormName;
-        private GroupBox groupBox1;
-        private Panel panel3;
-        private Panel panel1;
-        private Panel panel2;
-        private Label label2;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
-        private Label label3;
-        private Label lblCountNhanVien;
-        private GroupBox groupBox2;
-        private Label lblCountKhachHang;
-        private Label label6;
-        private PictureBox pictureBox10;
-        private Label lblCountOrder;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox11;
-        private Panel panel4;
-        private Label lblRevenue;
-        private Label label9;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private Button btnQLNhapHang;
-        private PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnLeft;
+        private System.Windows.Forms.PictureBox ptbLogoStore;
+        private System.Windows.Forms.Panel pnTop;
+        private System.Windows.Forms.PictureBox ptbBtnHome;
+        private System.Windows.Forms.Button btnTrangChu;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnHangHoa;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnQLNhapHang;
+        private System.Windows.Forms.Button btnKhachHang;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnNhanVien;
+        private System.Windows.Forms.Button btnTaoDonHang;
+        private System.Windows.Forms.Button btnNhaCungCap;
+        private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Label lblLogout;
+        private System.Windows.Forms.PictureBox ptbLogout;
+        private System.Windows.Forms.Panel pnBody;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblFormName;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lblCountKhachHang;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblCountOrder;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label lblCountNhanVien;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblRevenue;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Button btnQLDonHang;
+        private System.Windows.Forms.PictureBox pictureBox14;
     }
 }

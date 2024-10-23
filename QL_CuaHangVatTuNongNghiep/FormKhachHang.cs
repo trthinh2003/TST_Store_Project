@@ -22,9 +22,34 @@ namespace QL_CuaHangVatTuNongNghiep
         public SqlConnection conn = null;
         private void FormKhachHang_Load(object sender, EventArgs e)
         {
+            ThietLapPlaceHoderChoTBTimKiem();
             h.KetNoi(ref conn);
             HienThiDGKH();
             DoiTenCotDG(dgvKhachHang);
+        }
+
+        private void ThietLapPlaceHoderChoTBTimKiem()
+        {
+            txtTimKiem.Text = "Tìm kiếm Khách hàng theo Tên khách hàng...";
+            txtTimKiem.ForeColor = Color.Gray;
+        }
+
+        private void txtTimKiem_Enter(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "Tìm kiếm Khách hàng theo Tên khách hàng...")
+            {
+                txtTimKiem.Text = "";
+                txtTimKiem.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtTimKiem_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
+            {
+                txtTimKiem.Text = "Tìm kiếm Khách hàng theo Tên khách hàng...";
+                txtTimKiem.ForeColor = Color.Gray;
+            }
         }
 
         private void HienThiDGKH()
@@ -203,7 +228,5 @@ namespace QL_CuaHangVatTuNongNghiep
                 }
             }
         }
-
-
     }
 }

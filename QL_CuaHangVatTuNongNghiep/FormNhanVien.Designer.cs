@@ -372,7 +372,7 @@
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.EnableHeadersVisualStyles = false;
             this.dgvNhanVien.GridColor = System.Drawing.SystemColors.WindowFrame;
-            this.dgvNhanVien.Location = new System.Drawing.Point(47, 36);
+            this.dgvNhanVien.Location = new System.Drawing.Point(47, 45);
             this.dgvNhanVien.Name = "dgvNhanVien";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -387,24 +387,27 @@
             this.dgvNhanVien.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1195, 195);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1195, 186);
             this.dgvNhanVien.TabIndex = 6;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             this.dgvNhanVien.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvNhanVien_CellFormatting);
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(143, 9);
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtTimKiem.Location = new System.Drawing.Point(125, 2);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(374, 27);
+            this.txtTimKiem.Size = new System.Drawing.Size(374, 34);
             this.txtTimKiem.TabIndex = 5;
+            this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
             this.txtTimKiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTimKiem_KeyDown);
+            this.txtTimKiem.Leave += new System.EventHandler(this.txtTimKiem_Leave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label1.Location = new System.Drawing.Point(42, 5);
+            this.label1.Location = new System.Drawing.Point(42, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 28);
             this.label1.TabIndex = 4;

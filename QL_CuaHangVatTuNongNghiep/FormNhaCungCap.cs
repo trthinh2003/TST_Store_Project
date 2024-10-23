@@ -22,6 +22,7 @@ namespace QL_CuaHangVatTuNongNghiep
         SqlConnection conn = null;
         private void FormNhaCungCap_Load(object sender, EventArgs e)
         {
+            ThietLapPlaceHoderChoTBTimKiem();
             try
             {
                 func.KetNoi(ref conn);
@@ -33,13 +34,39 @@ namespace QL_CuaHangVatTuNongNghiep
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void ThietLapPlaceHoderChoTBTimKiem()
+        {
+            txtKeyWord.Text = "Tìm kiếm Nhà cung cấp theo Tên nhà cung cấp...";
+            txtKeyWord.ForeColor = Color.Gray;
+        }
+
+
+        private void txtKeyWord_Enter(object sender, EventArgs e)
+        {
+            if (txtKeyWord.Text == "Tìm kiếm Nhà cung cấp theo Tên nhà cung cấp...")
+            {
+                txtKeyWord.Text = "";
+                txtKeyWord.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtKeyWord_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtKeyWord.Text))
+            {
+                txtKeyWord.Text = "Tìm kiếm Nhà cung cấp theo Tên nhà cung cấp...";
+                txtKeyWord.ForeColor = Color.Gray;
+            }
+        }
+
         private void DoiTenCotDGNhaCungCap(DataGridView dg)
         {
-            dgvNCC.Columns["MaNhaCungCap"].HeaderText = "Mã Nhà Cung Cấp";
-            dgvNCC.Columns["TenNhaCungCap"].HeaderText = "Tên Nhà Cung Cấp";
-            dgvNCC.Columns["SoDienThoaiNhaCungCap"].HeaderText = "Số Điện Thoại";
+            dgvNCC.Columns["MaNhaCungCap"].HeaderText = "Mã nhà cung cấp";
+            dgvNCC.Columns["TenNhaCungCap"].HeaderText = "Tên nhà cung cấp";
+            dgvNCC.Columns["SoDienThoaiNhaCungCap"].HeaderText = "Số điện thoại";
             dgvNCC.Columns["EmailNhaCungCap"].HeaderText = "Email";
-            dgvNCC.Columns["DiaChiNhaCungCap"].HeaderText = "Địa Chỉ";
+            dgvNCC.Columns["DiaChiNhaCungCap"].HeaderText = "Địa chỉ";
             dgvNCC.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
 
         }

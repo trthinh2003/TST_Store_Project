@@ -27,6 +27,31 @@ namespace QL_CuaHangVatTuNongNghiep
             return dt;
         }
 
+        public DataSet DataSet(string query, string nameDS)
+        {
+            DataSet ds = new DataSet();
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                adapter = new SqlDataAdapter(query, conn);
+                adapter.Fill(ds, nameDS);
+                conn.Close();
+            }
+            return ds;
+        }
+
+        public int DemSoLuong(string query)
+        {
+            int soLuong;
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                command = new SqlCommand(query, conn);
+                soLuong = (int)command.ExecuteScalar();
+                conn.Close();
+            }
+            return soLuong;
+        }
 
         //Xử lý bên FormDangNhap
         public void CommandXacNhanTaiKhoan(NhanVien nhanVien, string query, ref bool tonTaiTaiKhoan)
@@ -69,6 +94,21 @@ namespace QL_CuaHangVatTuNongNghiep
                 {
                     tenNV = reader.GetString(0);
                     chucVu = reader.GetString(1);
+                }
+                conn.Close();
+            }
+        }
+
+        public void CommandLayTenNV(ref string tenNV, string query)
+        {
+            using (SqlConnection conn = Connection.GetSqlConnection())
+            {
+                conn.Open();
+                command = new SqlCommand(query, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    tenNV = reader.GetString(0);
                 }
                 conn.Close();
             }
@@ -349,7 +389,7 @@ namespace QL_CuaHangVatTuNongNghiep
             }
         }
 
-        public double LayTongTienDonHang(string query)
+        public double LayTongTien(string query)
         {
             double tongTien = 0.0;
             using (SqlConnection conn = Connection.GetSqlConnection())
@@ -359,7 +399,8 @@ namespace QL_CuaHangVatTuNongNghiep
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    tongTien = reader.GetDouble(0);
+                    if (!reader.IsDBNull(0)) tongTien = reader.GetDouble(0);
+                    else tongTien = 0.0;
                 }
                 reader.Close();
                 conn.Close();

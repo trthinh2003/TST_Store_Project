@@ -26,6 +26,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void FormHangHoa_Load(object sender, EventArgs e)
         {
+            ThietLapPlaceHoderChoTBTimKiem();
             string query = "SELECT c.MaNhaCungCap, h.MaHang, h.TenHang, h.DVT, h.GiaNiemYet, h.HinhAnh, l.MaLoai, l.TenLoai, ncc.TenNhaCungCap " +
                           "FROM HangHoa h, LoaiHang l, CungCap c, NhaCungCap ncc " +
                           "WHERE h.MaLoai = l.MaLoai " +
@@ -36,6 +37,30 @@ namespace QL_CuaHangVatTuNongNghiep
             DieuChinhCacCotDG(dgvHangHoa);
             modify.HienThiCombobox("SELECT MaLoai, TenLoai FROM LoaiHang", cboTenLoaiHangHoa, "TenLoai", "MaLoai");
             modify.HienThiCombobox("SELECT MaNhaCungCap, TenNhaCungCap FROM NhaCungCap", cboNhaCungCap, "TenNhaCungCap", "MaNhaCungCap");
+        }
+
+        private void ThietLapPlaceHoderChoTBTimKiem()
+        {
+            txtTimKiem.Text = "Tìm kiếm Hàng hóa theo Tên hàng hóa...";
+            txtTimKiem.ForeColor = Color.Gray;
+        }
+
+        private void txtTimKiem_Enter(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "Tìm kiếm Hàng hóa theo Tên hàng hóa...")
+            {
+                txtTimKiem.Text = "";
+                txtTimKiem.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtTimKiem_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
+            {
+                txtTimKiem.Text = "Tìm kiếm Hàng hóa theo Tên hàng hóa...";
+                txtTimKiem.ForeColor = Color.Gray;
+            }
         }
 
         private void HienThiDGHangHoa(string query)
@@ -187,10 +212,12 @@ namespace QL_CuaHangVatTuNongNghiep
             if (e.KeyCode == Keys.Enter)
             {
                 string tuKhoa = txtTimKiem.Text.Trim();
-                string sqlSearch = "SELECT h.MaHang, h.TenHang, h.DVT, h.GiaNiemYet, h.HinhAnh, l.MaLoai, l.TenLoai " +
-                    "FROM HangHoa h, LoaiHang l " +
-                    "WHERE h.MaLoai = l.MaLoai " +
-                    "AND TenHang LIKE N'%" + tuKhoa + "%'";
+                string sqlSearch = "SELECT c.MaNhaCungCap, h.MaHang, h.TenHang, h.DVT, h.GiaNiemYet, h.HinhAnh, l.MaLoai, l.TenLoai, ncc.TenNhaCungCap " +
+                                   "FROM HangHoa h, LoaiHang l, CungCap c, NhaCungCap ncc " +
+                                   "WHERE h.MaLoai = l.MaLoai " +
+                                   "AND h.MaHang = c.MaHang " +
+                                   "AND c.MaNhaCungCap = ncc.MaNhaCungCap " +
+                                   "AND h.TenHang LIKE N'%" + tuKhoa + "%'";
                 HienThiDGHangHoa(sqlSearch);
             }
         }

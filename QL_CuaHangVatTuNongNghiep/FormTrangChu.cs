@@ -32,6 +32,9 @@ namespace QL_CuaHangVatTuNongNghiep
                 lblChucVu.Text = "Chức vụ: " + chucVu;
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
+            lblCountNhanVien.Text = modify.DemSoLuong("SELECT COUNT(*) FROM NhanVien").ToString();
+            lblCountOrder.Text = modify.DemSoLuong("SELECT COUNT(*) FROM HoaDon").ToString();
+            lblCountKhachHang.Text = modify.DemSoLuong("SELECT COUNT(*) FROM KhachHang").ToString();
         }
 
         private void layTTNV()

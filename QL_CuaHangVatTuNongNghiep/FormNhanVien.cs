@@ -27,6 +27,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void FormNhanVien_Load(object sender, EventArgs e)
         {
+            ThietLapPlaceHoderChoTBTimKiem();
             layTTNV();
             kiemTraUser();
             h.KetNoi(ref conn);
@@ -34,17 +35,41 @@ namespace QL_CuaHangVatTuNongNghiep
             DoiTenCotDG(dgvNhanVien);
         }
 
+        private void ThietLapPlaceHoderChoTBTimKiem()
+        {
+            txtTimKiem.Text = "Tìm kiếm Nhân viên theo Tên nhân viên...";
+            txtTimKiem.ForeColor = Color.Gray;
+        }
+
+        private void txtTimKiem_Enter(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "Tìm kiếm Nhân viên theo Tên nhân viên...")
+            {
+                txtTimKiem.Text = "";
+                txtTimKiem.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtTimKiem_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
+            {
+                txtTimKiem.Text = "Tìm kiếm Nhân viên theo Tên nhân viên...";
+                txtTimKiem.ForeColor = Color.Gray;
+            }
+        }
+
         private void DoiTenCotDG(DataGridView dgvNhanVien)
         {
-            dgvNhanVien.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
-            dgvNhanVien.Columns["TenNV"].HeaderText = "Tên Nhân Viên";
-            dgvNhanVien.Columns["GioiTinh"].HeaderText = "Giới Tính";
+            dgvNhanVien.Columns["MaNV"].HeaderText = "Mã nhân viên";
+            dgvNhanVien.Columns["TenNV"].HeaderText = "Tên nhân viên";
+            dgvNhanVien.Columns["GioiTinh"].HeaderText = "Giới tính";
             dgvNhanVien.Columns["EmailNV"].HeaderText = "Email";
-            dgvNhanVien.Columns["DiaChiNV"].HeaderText = "Địa Chỉ";
-            dgvNhanVien.Columns["SDTNV"].HeaderText = "Số Điện Thoại";
-            dgvNhanVien.Columns["ChucVu"].HeaderText = "Chức Vụ";
-            dgvNhanVien.Columns["TenDangNhap"].HeaderText = "Tên Đăng Nhập";
-            dgvNhanVien.Columns["MatKhau"].HeaderText = "Mật Khẩu";
+            dgvNhanVien.Columns["DiaChiNV"].HeaderText = "Địa chỉ";
+            dgvNhanVien.Columns["SDTNV"].HeaderText = "Số điện thoại";
+            dgvNhanVien.Columns["ChucVu"].HeaderText = "Chức vụ";
+            dgvNhanVien.Columns["TenDangNhap"].HeaderText = "Tên đăng nhập";
+            dgvNhanVien.Columns["MatKhau"].HeaderText = "Mật khẩu";
             dgvNhanVien.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
         }
 
@@ -318,6 +343,7 @@ namespace QL_CuaHangVatTuNongNghiep
                     string sql_timkiem = "SELECT MaNV, TenNV, GioiTinh, EmailNV, DiaChiNV, SDTNV, ChucVu, TenDangNhap, MatKhau " +
                                          "FROM NhanVien WHERE TenNV LIKE N'%" + tukhoa + "%'";
                     dgvNhanVien.DataSource = modify.DataTable(sql_timkiem);
+                    DoiTenCotDG(dgvNhanVien);
                 }
             }
         }
@@ -326,5 +352,7 @@ namespace QL_CuaHangVatTuNongNghiep
         {
             txtMatKhau.PasswordChar = '*';
         }
+
+
     }
 }

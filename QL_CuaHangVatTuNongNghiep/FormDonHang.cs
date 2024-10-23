@@ -248,7 +248,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void tinhTongTienDonHang()
         {
-            lblTongTienDonHang.Text = modify.LayTongTienDonHang("SELECT SUM(ct.SoLuong * ct.DonGia) " +
+            lblTongTienDonHang.Text = modify.LayTongTien("SELECT SUM(ct.SoLuong * ct.DonGia) " +
                                                                 "FROM HoaDon hd, KhachHang kh, NhanVien nv, CT_HD ct, HangHoa h " +
                                                                 "WHERE nv.MaNV = hd.MaNV " +
                                                                 "AND kh.MaKH = hd.MaKH " +
@@ -298,6 +298,12 @@ namespace QL_CuaHangVatTuNongNghiep
             MemoryStream memoryStream = new MemoryStream(h.HinhAnh);
             ptbAnhHangHoa.Image = Image.FromStream(memoryStream);
 
+        }
+
+        private void btnInThongTin_Click(object sender, EventArgs e)
+        {
+            FormInDonHang frmInDonHang = new FormInDonHang(tempDN, lblTongTienDonHang.Text);
+            frmInDonHang.Show();
         }
     }
 }

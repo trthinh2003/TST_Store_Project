@@ -566,8 +566,8 @@
             <DataSetName>ThongTinDonHang</DataSetName>
             <Top>0.02778in</Top>
             <Left>0.18833in</Left>
-            <Height>0.66056in</Height>
-            <Width>9.125in</Width>
+            <Height>0.66055in</Height>
+            <Width>9.12502in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -635,7 +635,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.45in</Height>
+        <Height>3.58333in</Height>
         <Style />
       </Body>
       <Width>9.59667in</Width>
@@ -740,7 +740,7 @@
               <Top>1.26333in</Top>
               <Left>0.305in</Left>
               <Height>0.25in</Height>
-              <Width>0.94167in</Width>
+              <Width>1.10555in</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
@@ -768,7 +768,7 @@
               </Paragraphs>
               <rd:DefaultName>HoTenNhanVien</rd:DefaultName>
               <Top>1.26333in</Top>
-              <Left>1.28833in</Left>
+              <Left>1.48in</Left>
               <Height>0.25in</Height>
               <Width>1.7in</Width>
               <ZIndex>4</ZIndex>

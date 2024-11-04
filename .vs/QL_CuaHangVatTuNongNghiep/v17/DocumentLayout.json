@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|e:\\doanqlvattunongnghiep\\tst_store_project\\ql_cuahangvattunongnghiep\\formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|e:\\doanqlvattunongnghiep\\tst_store_project\\ql_cuahangvattunongnghiep\\formqldonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formqldonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|e:\\doanqlvattunongnghiep\\tst_store_project\\ql_cuahangvattunongnghiep\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\ql_cuahangvattunongnghiep\\formqldonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{531CD517-8489-4C72-B1E9-C574AFC9A6B2}|QL_CuaHangVatTuNongNghiep\\QL_CuaHangVatTuNongNghiep.csproj|solutionrelative:ql_cuahangvattunongnghiep\\formqldonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,35 +18,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormDangNhap.cs [Design]",
-              "DocumentMoniker": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormDangNhap.cs",
-              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormDangNhap.cs",
-              "ToolTip": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormDangNhap.cs [Design]",
-              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormDangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T06:55:23.115Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:716471800:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormTrangChu.cs [Design]",
-              "DocumentMoniker": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
-              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs",
-              "ToolTip": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs [Design]",
-              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormTrangChu.cs [Design]",
+              "Title": "FormQLDonHang.cs",
+              "DocumentMoniker": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs",
+              "ToolTip": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAADwv3IAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T06:55:26.554Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-03T12:36:34.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormQLDonHang.cs [Design]",
+              "DocumentMoniker": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs",
+              "RelativeDocumentMoniker": "QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs",
+              "ToolTip": "E:\\DoAnQLVatTuNongNghiep\\TST_Store_Project\\QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs [Design]",
+              "RelativeToolTip": "QL_CuaHangVatTuNongNghiep\\FormQLDonHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T12:34:54.104Z"
             }
           ]
         }

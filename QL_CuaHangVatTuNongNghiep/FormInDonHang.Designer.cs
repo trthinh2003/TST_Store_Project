@@ -48,7 +48,7 @@
             this.Controls.Add(this.reportDonHang);
             this.Name = "FormInDonHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormInDonHang";
+            this.Text = "In đơn hàng";
             this.Load += new System.EventHandler(this.FormInDonHang_Load);
             this.ResumeLayout(false);
 

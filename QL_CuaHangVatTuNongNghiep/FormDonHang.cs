@@ -77,7 +77,7 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private bool ktraInputDonHang()
         {
-            if (String.IsNullOrEmpty(txtMaDonHang.Text) || String.IsNullOrEmpty(gbDonHang.Text) ||
+            if (String.IsNullOrEmpty(txtMaDonHang.Text) || String.IsNullOrEmpty(txtMaHangHoa.Text) ||
                 String.IsNullOrEmpty(txtDonGia.Text)) return false;
             else return true;
         }
@@ -202,7 +202,7 @@ namespace QL_CuaHangVatTuNongNghiep
         private void btnDatLaiDonHang_Click(object sender, EventArgs e)
         {
             txtMaDonHang.Text = "";
-            gbDonHang.Text = "";
+            txtMaHangHoa.Text = "";
             txtDonGia.Text = "";
             txtMaDonHang.Enabled = true;
         }
@@ -231,7 +231,7 @@ namespace QL_CuaHangVatTuNongNghiep
                     try
                     {
                         modify.CommandThemDonHang(query1, int.Parse(txtMaNV.Text), int.Parse(txtMaKH.Text));
-                        modify.CommandThemDonHang(query2, int.Parse(txtMaDonHang.Text), int.Parse(gbDonHang.Text),
+                        modify.CommandThemDonHang(query2, int.Parse(txtMaDonHang.Text), int.Parse(txtMaHangHoa.Text),
                             int.Parse(txtSoLuongNhap.Text), int.Parse(txtDonGia.Text));
                         MessageBox.Show("Thêm đơn hàng mới thành công!");
                         HienThiDGDonHang();
@@ -297,7 +297,6 @@ namespace QL_CuaHangVatTuNongNghiep
             txtDonGia.Text = lblGiaNiemYet.Text.Split(new string[] { " " }, StringSplitOptions.None)[0];
             MemoryStream memoryStream = new MemoryStream(h.HinhAnh);
             ptbAnhHangHoa.Image = Image.FromStream(memoryStream);
-
         }
 
         private void btnInThongTin_Click(object sender, EventArgs e)

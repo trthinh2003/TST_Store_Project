@@ -96,7 +96,7 @@
             this.Name = "FormXacNhanXoaHangHoa";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormXacNhanXoaHangHoa";
+            this.Text = "Thông báo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

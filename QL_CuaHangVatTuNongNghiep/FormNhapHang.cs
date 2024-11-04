@@ -129,5 +129,10 @@ namespace QL_CuaHangVatTuNongNghiep
                 txtTimKiem.Text = "";
             }
         }
+
+        private void dgPhieuNhapHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

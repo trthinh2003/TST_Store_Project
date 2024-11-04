@@ -60,11 +60,11 @@ namespace QL_CuaHangVatTuNongNghiep
 
         private void DoiTenCotDG(DataGridView dgvKhachHang)
         {
-            dgvKhachHang.Columns["MaKH"].HeaderText = "Mã Khách Hàng";
-            dgvKhachHang.Columns["TenKH"].HeaderText = "Tên Khách Hàng";
-            dgvKhachHang.Columns["SDTKH"].HeaderText = "Số Điện Thoại";
+            dgvKhachHang.Columns["MaKH"].HeaderText = "Mã khách Hàng";
+            dgvKhachHang.Columns["TenKH"].HeaderText = "Tên khách Hàng";
+            dgvKhachHang.Columns["SDTKH"].HeaderText = "Số điện thoại";
             dgvKhachHang.Columns["EmailKH"].HeaderText = "Email";
-            dgvKhachHang.Columns["DiaChiKH"].HeaderText = "Địa Chỉ";
+            dgvKhachHang.Columns["DiaChiKH"].HeaderText = "Địa chỉ";
         }
 
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)

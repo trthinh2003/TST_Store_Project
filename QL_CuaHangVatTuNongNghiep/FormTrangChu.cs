@@ -35,6 +35,8 @@ namespace QL_CuaHangVatTuNongNghiep
             lblCountNhanVien.Text = modify.DemSoLuong("SELECT COUNT(*) FROM NhanVien").ToString();
             lblCountOrder.Text = modify.DemSoLuong("SELECT COUNT(*) FROM HoaDon").ToString();
             lblCountKhachHang.Text = modify.DemSoLuong("SELECT COUNT(*) FROM KhachHang").ToString();
+            lblRevenue.Text = (modify.LayTongTien("SELECT SUM(SoLuong*DonGia) FROM CT_HD")
+                - modify.LayTongTien("SELECT SUM(SoLuongNhap*DonGiaNhap) FROM ChiTietPhieuNhap")).ToString("#,##0") + " VND";
         }
 
         private void layTTNV()
